@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="海边小屋纸模套件：三张零件板，四十件独立组件。取件、转向，慢慢拼成自己的小小海岸。">
+<title>海边小屋 · 拼装工坊</title><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="workshop">
+  <nav class="masthead" aria-label="拼装工坊导航">
+    <a class="brand" href="./" aria-label="拼装工坊首页"><span>拼装</span><span class="brand-school">工坊</span></a>
+    <span class="edition">小小建筑收藏集 <i>／</i> 海边系列</span>
+    <button class="preview-button" id="preview" aria-pressed="false" data-loading disabled><span>成品预览</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M5 4h11v11"/></svg></button>
+  </nav>
+  <header class="title-row"><div><p class="eyebrow"><span>NO. 01</span> THE SEASIDE COLLECTION</p><h1>海边小屋<span>Seaside Cottage</span></h1><p class="intro">从一张纸板，慢慢拼出一座小小海岸。</p></div><div class="kit-index"><div><b>03</b><span>张零件板</span></div><i></i><div><b>40</b><span>个独立部件</span></div></div></header>
+  <section class="workspace" aria-label="三维拼装工作台">
+    <div class="stage">
+      <div class="stage-heading"><span><i></i> 拼装工作台</span><span>01 — 取件 / 02 — 转向 / 03 — 对位</span><strong class="finished-heading">海边小屋 · 成品</strong><button class="collection-ticket" data-collection-ticket hidden>已入藏　·　翻看收藏卡 ↗</button></div>
+      <div id="viewport" class="viewport" aria-label="3D 零件板与装配场景" aria-busy="true">
+        <p id="load-message" role="status">正在铺开零件板…</p>
+        <div class="view-tools"><button id="focus" aria-label="近看模型" title="近看模型" data-loading disabled><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M7 10h6m-3-3v6"/></svg></button><button id="explode" aria-label="展开" title="展开组件" aria-pressed="false" data-loading disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg></button><button id="joints" aria-label="看接口" title="看接口" aria-pressed="false" data-loading disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h7v8H3Zm11 0h7v8h-7M10 12h4M12 4v3m0 10v3"/></svg></button><button id="reset" aria-label="复位视角" title="复位视角" data-loading disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/></svg></button></div>
+        <div class="scene-labels"><span><b>零件板</b> 点击定位</span><span><b>装配区</b> 拼装进度保留</span></div>
+        <p class="view-hint"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 2 8 6-4 1-2 4Z"/></svg> 拖动旋转 <i>·</i> 滚动缩放 <i>·</i> 双指平移</p>
+      </div>
+      <div class="sheet-drawer"><span class="drawer-label">零件板<span>PART SHEETS</span></span><div class="board-tabs" role="tablist" aria-label="零件板">
+        <button id="board-A" role="tab" aria-selected="true" data-loading disabled><b>A</b><span>主体结构<small>13 / 13 件</small></span><i>↗</i></button>
+        <button id="board-B" role="tab" aria-selected="false" data-loading disabled><b>B</b><span>屋顶与门廊<small>13 / 13 件</small></span><i>↗</i></button>
+        <button id="board-C" role="tab" aria-selected="false" data-loading disabled><b>C</b><span>门窗与细节<small>14 / 14 件</small></span><i>↗</i></button>
+      </div></div>
+    </div>
+    <aside class="instruction-card" aria-label="当前装配步骤">
+      <div class="card-heading"><span>装配手记</span><small>ASSEMBLY NOTES</small></div>
+      <div class="part-illustration"><span id="part-label">A01</span><svg id="part-preview" viewBox="0 0 200 120" aria-label="当前零件轮廓"><path/></svg><span class="paper-note">找到这一片</span></div>
+      <div class="step-copy"><p id="phase">在板上找这一件</p><h2 id="step-title">底座</h2><p id="instruction">从零件板取出底座，开始拼装。</p></div>
+      <div class="scrub"><div><label for="progress">本步动作</label><output id="progress-label">0%</output></div><input id="progress" type="range" min="0" max="100" value="0" data-loading disabled></div>
+      <div class="transport"><button id="previous" aria-label="上一步" title="上一步" disabled>←</button><button id="play" data-loading disabled>装配这一件</button><button id="next" aria-label="下一步" title="下一步" data-loading disabled>→</button></div>
+      <div class="secondary"><button id="auto" aria-pressed="false" data-loading disabled><i></i>连续演示</button><button id="restart" data-loading disabled>重新开始</button></div>
+      <div class="assembly-count"><div><span>小屋完成度</span><strong id="overall">00 / 40</strong></div><div class="count-track"><i id="overall-bar"></i></div><p>不着急，随时可以停下来看看。</p></div>
+    </aside>
+  </section>
+  <details class="steps"><summary><span>零件与步骤索引</span><small>40 PIECES</small><b>＋</b></summary><div id="step-list"></div></details>
+  <footer><span>拼装工坊 <i>·</i> 海边小屋</span><span>三张纸板，一座小小海岸。</span><span>COLLECTION 001 — 2026</span></footer>
+</main>
+<script type="module" src="./main.js"></script>
+</body></html>

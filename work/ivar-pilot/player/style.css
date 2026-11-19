@@ -1,0 +1,18 @@
+@import "../../academy/manual.css";
+@import "../../academy/return.css";
+
+.route-choice{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:11px;margin:4px 0 10px}
+.route-choice select{min-width:0;max-width:100%;flex:1;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:5px;font:inherit}
+.route-heading{margin-top:18px}
+.extra-steps{margin:8px 0 0}
+#steps{grid-template-columns:repeat(auto-fit,minmax(15px,1fr))}
+#partview canvas,#detail-view canvas{display:block;width:100%;height:100%;touch-action:none}
+#stage canvas{touch-action:none}
+.nav-bottom a{font-size:11px;color:var(--muted)}
+
+.comparison-surface{background:#f6f0e1;height:170px}
+.comparison-surface #partview,.comparison-surface .poster,.comparison-surface .poster img{width:100%;height:100%}
+.comparison-surface .poster{padding:0;border:0;cursor:grab}
+.comparison-surface .poster img{object-fit:contain;mix-blend-mode:multiply}
+
+#inline-model #partview{height:210px}

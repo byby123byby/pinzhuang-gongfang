@@ -1,0 +1,4 @@
+interface:
+  display_name: "PDF 转 3D 装配说明书"
+  short_description: "用多个 Agent 对照原 PDF 理解、建模和核验可交互装配说明书"
+  default_prompt: "使用 $pdf-to-3d-manual 读取这份 PDF，分工理解、建模和独立检查，生成可交互的 3D 装配说明书。"

@@ -1,0 +1,88 @@
+{
+  "library_sha256": "45f0c718acbbb6e3494738a0e3e63e850669aedcb11f442d8a32be1214905d94",
+  "actions_sha256": "15884e4196e3a76529f4c0fe631844b428f06a09c94a2d64645a35676fc58b87",
+  "variants": {
+    "wall": {
+      "instances": 63,
+      "distinctMeshTypes": 14,
+      "meshInstances": {
+        "bottom": 1,
+        "101350": 8,
+        "top": 1,
+        "side": 2,
+        "100214": 8,
+        "back": 1,
+        "10078170": 4,
+        "109220": 4,
+        "100344": 16,
+        "wallFixing": 2,
+        "door": 2,
+        "109336": 4,
+        "101532": 8,
+        "shelf": 2
+      },
+      "embeddedImages": 63,
+      "max_transform_matrix_error": 4.76837158203125e-07,
+      "source_triangle_counts_match": true,
+      "glb_sha256": "9a3732c16313adc62beb7773b64c1775ed32eb58f6e565a2391fb522c09125e2"
+    },
+    "stack": {
+      "instances": 90,
+      "distinctMeshTypes": 16,
+      "meshInstances": {
+        "bottom": 2,
+        "101350": 8,
+        "top": 2,
+        "side": 4,
+        "100214": 8,
+        "back": 2,
+        "10078170": 4,
+        "109220": 4,
+        "100344": 16,
+        "door": 4,
+        "shelf": 4,
+        "101532": 18,
+        "101827": 2,
+        "109535": 4,
+        "wallFixing": 4,
+        "109336": 4
+      },
+      "embeddedImages": 69,
+      "max_transform_matrix_error": 4.76837158203125e-07,
+      "source_triangle_counts_match": true,
+      "glb_sha256": "7cac2968c3a9869a29d6502283be42d987cd68920f01a9837d50b8781ff281e2"
+    },
+    "rack": {
+      "instances": 85,
+      "distinctMeshTypes": 20,
+      "meshInstances": {
+        "bottom": 1,
+        "101350": 8,
+        "top": 1,
+        "side": 2,
+        "100214": 8,
+        "back": 1,
+        "10078170": 4,
+        "109220": 4,
+        "100344": 16,
+        "rackSide": 2,
+        "10095544": 6,
+        "109560": 6,
+        "100404": 4,
+        "102646": 2,
+        "wallFixing": 2,
+        "108458": 2,
+        "door": 2,
+        "109336": 4,
+        "101532": 8,
+        "shelf": 2
+      },
+      "embeddedImages": 81,
+      "max_transform_matrix_error": 4.76837158203125e-07,
+      "source_triangle_counts_match": true,
+      "glb_sha256": "2b4b0efd5b48957fb81c2ff764d0c14752d33c3f5ae98eed475963b6956b4748"
+    }
+  },
+  "editable_sha256": "8b1c6bf6845a2de13b4871a3f115010abb11edd207154d533517477104db78cb",
+  "cover_sha256": "3c1584e3c432af42941d4985ec542d1dd0aa3a670d314361873efdb895c98429"
+}

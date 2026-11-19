@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IVAR 伊娃柜 · 拼装工坊读图手记</title>
+<style>
+:root{color-scheme:light;--paper:#f7f4ea;--ink:#213e49;--line:#cbc9b9;--rust:#a7472c;--soft:#e7ebdf}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}main{max-width:960px;margin:auto;padding:30px clamp(18px,4vw,58px) 60px}header,footer{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:.83rem}header{border-bottom:1px solid var(--ink);padding-bottom:12px}a{color:var(--ink);text-underline-offset:4px}h1,h2,h3{font-family:Georgia,"Songti SC",serif;margin:0;line-height:1.32}h1{font-size:clamp(44px,8vw,84px)}h2{font-size:clamp(24px,4vw,34px);margin-bottom:16px}h3{font-size:1.25rem}p{margin:.35em 0 1em}.mast{padding:32px 0 24px}.mast p{margin-bottom:0}section{border-top:1px solid var(--line);padding:24px 0}.workbench{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center}.plate{margin:0;display:grid;place-items:center;background:#fff;padding:18px;height:300px;border:1px solid var(--line)}.plate img{max-width:100%;max-height:100%;min-height:0;object-fit:contain;mix-blend-mode:multiply}.actions{display:grid;gap:0}button,summary{font:inherit;color:inherit;cursor:pointer}.actions button{display:flex;align-items:center;gap:14px;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);padding:9px 12px}.actions button b{font-size:.75rem;color:var(--rust);font-weight:600}.actions button[aria-pressed=true]{background:var(--soft);box-shadow:inset 3px 0 var(--ink)}.caption{margin-top:14px}.caption p{margin:.35em 0}.ref{font-size:.85rem;color:var(--rust)}details{border-bottom:1px solid var(--line);padding:10px 0}summary{font-weight:550}details p{margin:8px 0}.meta{color:#516774}.rows{padding-left:1.45em}.rows li{padding:4px 0}.parts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.parts img{width:100%;height:190px;object-fit:contain;background:white}.parts figure{margin:0}.parts figcaption{font-size:.85rem}footer{border-top:1px solid var(--ink);padding-top:14px;flex-wrap:wrap}button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--rust);outline-offset:2px}@media(max-width:620px){.workbench{grid-template-columns:1fr;gap:12px}.plate{height:230px}.actions{grid-template-columns:1fr 1fr}.actions button{padding:7px;font-size:.9rem;gap:6px}.parts{grid-template-columns:1fr}header{align-items:baseline}}
+</style>
+<main><header><strong>拼装工坊 ／ 装配手记</strong><a href="../">打开 3D 装配台 ↗</a></header>
+<div class="mast"><h1 lang="en">IVAR</h1><h2>松木双门柜</h2><p>80 × 30 × 83 厘米　<span class="meta">·　铰链与门缝</span></p></div>
+<section><h2>一扇柜门怎么挂上去？</h2><div class="workbench"><figure class="plate"><img id="focus" alt=""></figure><div class="actions" aria-label="选择铰链动作">__BUTTONS__</div></div>
+<div class="caption" aria-live="polite"><h3 id="name"></h3><p id="instruction"></p><a id="source" class="ref" target="_blank" rel="noreferrer"></a></div></section>
+<section><h2>先清点，再选装法</h2><p>准备十字螺丝刀和尖锥，包装内另附 1 把内六角扳手。上墙用的螺钉和墙塞请按墙体选择。<a class="ref" href="__PDF__#page=2">原册第 2–5 页</a></p>
+<details><summary>展开五金清单与原图</summary><div class="parts"><figure><img src="__ITEM5__" alt="第5页编号五金及随包内六角扳手"><figcaption>宜家原册 · 第 5 页</figcaption></figure><figure><img src="__ITEM6__" alt="第6页支架、铰链、安装座和垫片"><figcaption>宜家原册 · 第 6 页</figcaption></figure></div>__INVENTORY__</details>
+__ROUTES__
+</section>
+<section><h2>合上门后，看哪里？</h2><p>从正面看门顶是否齐平、左右门缝是否合适，再从侧面看两扇门的前后位置。按出现的问题选图。</p>__ADJUST__</section>
+<section><h2>交给建模时保留什么</h2><ul class="rows"><li><b>铰链 109336</b>　门背斜视图看两翼螺孔；翻面看杯体；从铰臂正面看清长槽的大孔端与窄端。</li><li><b>底座 109220 与垫片 10078170</b>　分别保留独立零件。正视图核对安装孔，侧视图核对木面、垫片、底座的贴合顺序。</li><li><b>装上柜门后</b>　左右门各验证上下两个安装位。逐帧看螺钉头能否穿过大孔、螺杆能否滑进窄槽、十字刀尖能否接触指定螺钉。</li></ul><p class="meta">原册给出了结构和动作，未标出杯孔直径、长槽宽度或孔距。这些尺寸留待实测或 CAD 核对。</p></section>
+<footer><span>宜家原册 AA-2272100-5 · 2024-03-22</span><a href="__PDF__" target="_blank" rel="noreferrer">打开完整说明书 ↗</a></footer></main>
+<script>
+const frames=__FRAMES__;
+function show(index){
+ const frame=frames[index];
+ document.querySelectorAll('.actions button').forEach((button,i)=>button.setAttribute('aria-pressed',String(index===i)));
+ const img=document.querySelector('#focus');img.src=frame.image;img.alt=frame.name+'，宜家原图局部';
+ document.querySelector('#name').textContent=frame.name;document.querySelector('#instruction').textContent=frame.text;
+ const source=document.querySelector('#source');source.href='__PDF__#page='+frame.page;source.textContent='查看第 '+frame.page+' 页原图 ↗';
+}
+document.querySelectorAll('.actions button').forEach((button,i)=>button.addEventListener('click',()=>show(i)));show(2);
+</script></html>

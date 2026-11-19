@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>拼装工坊 · 立体说明书</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="./" aria-label="拼装工坊首页">
+      <span>拼装</span><span class="brand-school">工坊</span>
+    </a>
+    <span class="header-note">装配手记</span>
+    <button id="reopen-prep" class="quiet-button" hidden>准备清单</button>
+    <button id="finished" hidden class="quiet-button" disabled>看成品 ↗</button>
+  </header>
+
+  <main>
+    <section class="product-bar" aria-label="产品信息">
+      <div class="product-name"><div class="maker">宜家 <span lang="en">IKEA</span></div><h1 id="product-title">茶几 <em lang="en">LACK</em></h1></div>
+      <div class="product-meta"><span id="product-size">—</span><span id="product-code">读取产品信息…</span></div>
+    </section>
+
+    <section id="prep" class="notebook" aria-labelledby="prep-title">
+      <div class="prep-head"><div><p class="folio">装配手记 ／ 准备篇</p><h2 id="prep-title">开工清单</h2></div><button id="enter-assembly" class="primary-button" disabled>开始装配 →</button></div>
+      <div class="prep-spread">
+        <section class="parts-leaf"><div class="leaf-heading"><h3>随箱配件</h3><button data-source-page="3">原图 p.03 ↗</button></div>
+          <div class="part-plate"><img src="./references/prep/hardware.png" alt="官方图：115980、108530、109041、120298 各四件"></div>
+          <div id="check-hardware" class="check-grid"></div>
+          <div class="template-line"><img src="./references/prep/template.png" alt="带镂空和折钩的长条定位模板"><div id="check-template"></div></div>
+          <div class="boards-note"><h4>板件</h4><span id="check-boards"></span></div>
+        </section>
+        <section class="tools-leaf"><div class="leaf-heading"><h3>自备工具</h3><button data-source-page="2">原图 p.02 ↗</button></div>
+          <div class="tool-list" id="check-tools"></div>
+          <small class="prep-note">按准备图，各备一把。锤子列在准备页，后续步骤没有敲击动作。</small>
+          <h3 class="tips-title">开工小提醒</h3>
+          <figure class="tip"><img src="./references/prep/mat.png" alt="原图对照：硬地面容易磕伤板角，右侧示范铺垫"><figcaption>先铺一张软垫或毯子，再把板件放上去，护住板角。</figcaption></figure>
+          <figure class="tip"><img src="./references/prep/help.png" alt="原图提示：遇到疑问时联系宜家"><figcaption>遇到看不懂的步骤，先停下来对照原图，也可以联系宜家咨询。</figcaption></figure>
+        </section>
+      </div>
+    </section>
+    <div class="workspace notebook" id="workbench" hidden>
+      <nav class="step-nav" aria-label="装配步骤">
+        <div class="section-label"><span>装配步骤</span><span id="step-count">—</span></div>
+        <div id="steps"></div>
+
+      </nav>
+
+      <section class="stage-wrap" aria-label="3D 装配演示">
+        <div class="stage-heading"><span id="pose-label">装配面朝上</span>          <div class="scene-tools" aria-label="视图工具">
+            <button id="reset" class="icon-button" title="复位视角" aria-label="复位视角" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7a6.5 6.5 0 1 1-.5 5M4 3v4h4"/></svg></button>
+            <button id="free-orbit" title="上下、左右均可连续翻转 360°" aria-pressed="false" disabled>自由翻转</button>
+            <button id="xray" title="透视连接处" aria-pressed="false" disabled>透视</button>
+            <button id="detail-toggle" title="显示连接细节" aria-pressed="true" disabled>细节</button>
+            <button id="tool-toggle" title="显示本步工具" aria-pressed="true" disabled>工具</button>
+            <button id="guide-toggle" aria-pressed="true" disabled>动作提示</button>
+          </div>
+</div>
+        <div id="stage" aria-busy="true">
+          <p id="loading">正在加载模型…</p>
+          <div class="detail-card" id="detail-card">
+            <div class="detail-caption"><span>连接细节</span><button id="detail-expand" class="icon-button" aria-label="放大连接细节" title="放大连接细节" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 3h5v5M17 3l-6 6M8 17H3v-5M3 17l6-6"/></svg></button></div>
+            <div id="detail-view"></div>
+            <p id="detail-label"></p>
+          </div>
+          <div class="stage-bottom"><span class="stage-hint">拖动旋转 · 滚轮缩放 · 点击选件</span><span class="schematic-note">尺寸示意</span></div>
+        </div>
+        <div class="action-status"><span class="status-dot" aria-hidden="true"></span><span id="tool-status">准备装配</span></div>
+        <div class="transport">
+          <button id="prev" class="icon-button" aria-label="上一步" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5"/></svg></button>
+          <button id="play" class="primary-button" disabled>播放这一步</button>
+          <label class="scrubber"><input id="progress" type="range" min="0" max="100" value="0" aria-label="本步进度" disabled><output id="progress-value" for="progress">0%</output></label>
+          <button id="next" class="icon-button" aria-label="下一步" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5"/></svg></button>
+        </div>
+        <div class="transport-foot"><button id="auto" aria-pressed="false" disabled>○ 连续播放</button><span id="installed">读取零件清单…</span></div>
+      </section>
+
+      <aside class="instructions" aria-label="当前动作">
+        <div class="instruction-heading"><p id="step-number">第 1 步</p><h2 id="step-title">准备开始</h2></div>
+        <p id="instruction"></p>
+        <div id="warning" class="warning" hidden></div>
+        <section class="needed"><h3>本步零件与工具</h3><div id="hardware"></div><div id="tools"></div><section id="part-identity" class="part-identity" aria-label="零件与工具样式" hidden></section></section>
+        <button class="pdf-card" id="source-page"><span>对照原说明书</span><strong id="page-label">查看原页 ↗</strong><img id="page-thumb" alt="当前步骤的原说明书页面"></button>
+      </aside>
+    </div>
+
+    <section class="reference-strip" aria-label="产品资料"><div class="nav-bottom"><button id="all-pdf">完整说明书 <span aria-hidden="true">↗</span></button></div>
+      <details><summary>尺寸与依据 <span>已知尺寸与示意范围</span></summary><div id="accuracy"></div></details>
+      <details><summary>零件原图对照 <span id="inventory-count">读取零件清单…</span></summary><p class="comparison-note">左侧为说明书原图，右侧模型可拖动查看另一面。</p><div id="inventory"></div></details>
+    </section>
+
+  </main>
+
+  <dialog id="sample-dialog" aria-labelledby="sample-name">
+    <div class="dialog-header"><div><small class="folio" id="sample-kind"></small><h2 id="sample-name"></h2></div><button type="button" id="close-sample" class="icon-button" aria-label="关闭外形图">×</button></div>
+    <figure><div id="sample-model"></div><figcaption id="sample-caption"></figcaption></figure>
+    <details class="sample-views" id="sample-views" hidden><summary></summary><img loading="lazy" alt=""></details>
+  </dialog>
+  <dialog id="pdf-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header"><strong id="dialog-title">原说明书</strong><button id="close-pdf" class="icon-button" aria-label="关闭原说明书"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+    <div class="pdf-page"><img id="pdf-image" alt="官方说明书原页"></div>
+    <a class="pdf-download" href="references/manual.pdf" target="_blank" rel="noopener">打开完整 PDF ↗</a>
+  </dialog>
+
+  <dialog id="detail-dialog" aria-labelledby="detail-dialog-title">
+    <div class="dialog-header"><div><span class="dialog-kicker">连接细节</span><h2 id="detail-dialog-title">查看本步连接</h2></div><button id="close-detail" class="icon-button" aria-label="关闭连接细节"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+    <div id="expanded-view" aria-label="可旋转的连接细节视图"></div>
+    <p id="expanded-caption">拖动旋转，滚轮缩放</p>
+    <div class="expanded-controls">
+      <div class="expanded-tools" aria-label="细节视图工具"><button id="expanded-reset">复位视角</button><button id="expanded-focus">回到连接处</button><button id="expanded-xray" aria-pressed="false">透视</button></div>
+      <div class="expanded-transport"><button id="expanded-play" class="primary-button">播放这一步</button><label class="scrubber"><input id="expanded-progress" type="range" min="0" max="100" value="0" aria-label="细节视图本步进度"><output id="expanded-progress-value" for="expanded-progress">0%</output></label></div>
+    </div>
+  </dialog>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

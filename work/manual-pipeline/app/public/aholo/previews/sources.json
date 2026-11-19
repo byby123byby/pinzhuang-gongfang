@@ -1,0 +1,369 @@
+{
+  "120938": {
+    "file": "corrected/120938.glb",
+    "kind": "corrected",
+    "taskId": "8359063",
+    "materialTaskId": "8359063",
+    "originalTaskId": "8359322",
+    "cameraDirection": [
+      -0.36,
+      -0.35,
+      1.25
+    ],
+    "cameraUp": [
+      -1,
+      0.24,
+      0
+    ],
+    "projectionCenter": [
+      -0.0004321301821619272,
+      0.10855505615472794,
+      0.0031113489530980587
+    ],
+    "orthoScale": 0.24176868796348572,
+    "studioYaw": 0,
+    "studioExposure": 1,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "3ceda8bef374ca15ba8db4eb6ba8ddee0728636ac572ed52f16b1e65878296f1",
+    "imageSha256": "e12d195ab15305c9b078ca1b0901b63bcee3c5c93dee38736b48aee692b815a3",
+    "verificationSheet": {
+      "file": "parts/120938-views.jpg",
+      "sha256": "1f07643760a04446f7b4756606507679a0048a471ea8873bdaf73aa2b67935fd",
+      "front": {
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "up": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "side": {
+        "direction": [
+          -1,
+          -0.055,
+          0.12
+        ],
+        "up": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "oblique": {
+        "direction": [
+          -0.36,
+          -0.35,
+          1.25
+        ],
+        "up": [
+          -1,
+          0.24,
+          0
+        ]
+      }
+    }
+  },
+  "screwdriver": {
+    "file": "corrected/screwdriver.glb",
+    "kind": "corrected",
+    "taskId": "8360420",
+    "materialTaskId": "8360420",
+    "originalTaskId": "8359803",
+    "cameraDirection": [
+      0.52,
+      -0.2,
+      1
+    ],
+    "cameraUp": [
+      0.72,
+      1,
+      0
+    ],
+    "projectionCenter": [
+      -0.0006705069099552929,
+      0.07724010944366455,
+      0.0007966854609549046
+    ],
+    "orthoScale": 0.20671989023685455,
+    "studioYaw": 0,
+    "studioExposure": 1,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "d8ba1018e5cfb8b2c98bc602793c85919da447c6c02f17e28fd174cc26d2c50b",
+    "imageSha256": "e5eebfd0b1985775d7eaba788187608f7cf4492150b9d7727ad81be198bbca2d"
+  },
+  "awl": {
+    "file": "corrected/awl.glb",
+    "kind": "corrected",
+    "taskId": "8360420",
+    "materialTaskId": "8360420",
+    "originalTaskId": "8359855",
+    "cameraDirection": [
+      0.48,
+      -0.19,
+      1
+    ],
+    "cameraUp": [
+      0.72,
+      1,
+      0
+    ],
+    "projectionCenter": [
+      -0.0009630283457227051,
+      0.07770354300737381,
+      0.0009759266977198422
+    ],
+    "orthoScale": 0.20526441931724548,
+    "studioYaw": 0,
+    "studioExposure": 1,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "a145b283586ed6f19496a09538bb05faa8aaa3cb0bcfb4fa10c6f1bcbadea745",
+    "imageSha256": "d9c61c86b579b75703abf36c42881ba2712a56622d18861c8965253ec3bea68e"
+  },
+  "hammer": {
+    "file": "corrected/hammer.glb",
+    "kind": "corrected",
+    "taskId": "8359329",
+    "materialTaskId": "8359329",
+    "originalTaskId": "8359329",
+    "cameraDirection": [
+      0.66,
+      -0.15,
+      1
+    ],
+    "cameraUp": [
+      0.05,
+      1,
+      0
+    ],
+    "projectionCenter": [
+      -0.002802604576572776,
+      0.13171324133872986,
+      0.0016469556139782071
+    ],
+    "orthoScale": 0.4204546809196472,
+    "studioYaw": 0,
+    "studioExposure": 1,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "5bd10d620db798c3c9b67145a735157bbd051ddbeb9950c44c890ab9ef837afa",
+    "imageSha256": "a5718222a9c98fae72b98a6e8c437ac05974eeb5e12b4426b0dacde0622ebe6a",
+    "headReview": {
+      "projectionCenter": [
+        -0.002,
+        0.235,
+        0
+      ],
+      "orthoScale": 0.137,
+      "cameraDirection": [
+        0.74,
+        -0.22,
+        1.0
+      ],
+      "cameraUp": [
+        0,
+        1,
+        0
+      ],
+      "sha256": "aa9f9f8a453a5cd60cda88e7bce82cca98fe3151c2858916acc099d3fd1eca28"
+    }
+  },
+  "120298": {
+    "file": "120298.glb",
+    "kind": "original",
+    "taskId": "8359317",
+    "materialTaskId": null,
+    "originalTaskId": "8359317",
+    "cameraDirection": [
+      0.75,
+      0.7,
+      1.82
+    ],
+    "cameraUp": [
+      0,
+      1,
+      0
+    ],
+    "projectionCenter": [
+      0.01044971402734518,
+      -0.016683628782629967,
+      0.003584959078580141
+    ],
+    "orthoScale": 1.9826164245605469,
+    "studioYaw": 0,
+    "studioExposure": 1,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "f01b6edb5c39fa75a1fb012e5b9ed7ab619b18fa07e365f85288d06e3343df97",
+    "imageSha256": "4b2020f1df1fa988596febc243045ef0beafe4d7e899fd3b706c616542764aba"
+  },
+  "108530": {
+    "file": "108530.glb",
+    "kind": "original",
+    "taskId": "8359397",
+    "materialTaskId": null,
+    "originalTaskId": "8359397",
+    "cameraDirection": [
+      0.65,
+      0.93,
+      1.65
+    ],
+    "cameraUp": [
+      0.28,
+      1,
+      0
+    ],
+    "projectionCenter": [
+      -0.06598851084709167,
+      0.05860288441181183,
+      -0.006814802065491676
+    ],
+    "orthoScale": 1.4943431615829468,
+    "studioYaw": 0,
+    "studioExposure": 1,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "64722b55a55905fb1b3cc87bc609b4c516003b944ce38030a2d4034a7ceb7f4b",
+    "imageSha256": "6805cfc3009fe46bde1601f8a80f2b1de3a71c24d441cf87f919ac8452b0a01b"
+  },
+  "109041": {
+    "file": "109041.glb",
+    "kind": "original",
+    "taskId": "8359748",
+    "materialTaskId": null,
+    "originalTaskId": "8359748",
+    "cameraDirection": [
+      0.62,
+      0.96,
+      1.55
+    ],
+    "cameraUp": [
+      0.28,
+      1,
+      0
+    ],
+    "projectionCenter": [
+      -0.09403906762599945,
+      0.0818697065114975,
+      -0.012914935126900673
+    ],
+    "orthoScale": 1.5305051803588867,
+    "studioYaw": 0,
+    "studioExposure": 1,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "4089ed250d73ec0fcc4ae37909c3b6e914bbad8da3aa79e43aeb738c0252b820",
+    "imageSha256": "b98fc0d4fc3abeda9957b1fcbb3b81aec9fc47f071274562b5bda053c3486f04"
+  },
+  "115980": {
+    "file": "corrected/115980.glb",
+    "kind": "corrected",
+    "taskId": "8359063",
+    "materialTaskId": "8359063",
+    "originalTaskId": "8359320",
+    "cameraDirection": [
+      0.65,
+      0.3,
+      1.4
+    ],
+    "cameraUp": [
+      0.45,
+      1,
+      0
+    ],
+    "projectionCenter": [
+      1.0698629012040328e-05,
+      0.017495186999440193,
+      -3.936183929909021e-06
+    ],
+    "orthoScale": 0.05034865066409111,
+    "studioYaw": 0,
+    "studioExposure": 1,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "1ce93de2e92d68970ed832b32249a1bbea8639aaec8c24f0a626dfab8e987382",
+    "imageSha256": "9b1bb2917b485961c5e9828971f911176161c8d5c72b54103e1857cc95ac34f9"
+  },
+  "tabletop": {
+    "file": "corrected/tabletop.glb",
+    "kind": "corrected",
+    "taskId": "8358400",
+    "materialTaskId": "8358400",
+    "originalTaskId": "8359871",
+    "cameraDirection": [
+      0.72,
+      -0.95,
+      1.4
+    ],
+    "cameraUp": [
+      0,
+      -1,
+      0
+    ],
+    "projectionCenter": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "orthoScale": 1.1878564357757568,
+    "studioYaw": 2.45,
+    "studioExposure": 0.7,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "e89280359c08388ee74746df554a15b5400ce5e4f8c46d51f75a77872ec75643",
+    "imageSha256": "233f21df4829fbb02d003d98338b75875af3e955a0e6f6ae68ee3813791040fc"
+  },
+  "leg": {
+    "file": "corrected/leg.glb",
+    "kind": "corrected",
+    "taskId": "8358400",
+    "materialTaskId": "8358400",
+    "originalTaskId": "8359947",
+    "cameraDirection": [
+      0.78,
+      0.75,
+      1.5
+    ],
+    "cameraUp": [
+      0.42,
+      1,
+      0
+    ],
+    "projectionCenter": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "orthoScale": 0.5878424048423767,
+    "studioYaw": 0,
+    "studioExposure": 0.91,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "d469e356a5b04615be331d7c6c17eafeb12463ec95cf33644292b12a180fe8d0",
+    "imageSha256": "f7acdd2a13ae6abba4d137945bafb86d1f3a9227c8c64a6cd6b7e8d75801da8b"
+  },
+  "shelf": {
+    "file": "corrected/shelf.glb",
+    "kind": "corrected",
+    "taskId": "8358400",
+    "materialTaskId": "8358400",
+    "originalTaskId": "8360390",
+    "cameraDirection": [
+      0.75,
+      -0.94,
+      1.45
+    ],
+    "cameraUp": [
+      0,
+      -1,
+      0
+    ],
+    "projectionCenter": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "orthoScale": 1.136536955833435,
+    "studioYaw": 2.45,
+    "studioExposure": 0.7,
+    "studioSha256": "8cfabcc5265c2c02750ecaa2b9e670b0711f00260a94a4405602be52a575ea4b",
+    "modelSha256": "ae5f75c765ed47c1ed414d6384057d718f990d266f806da80566d41cb16af991",
+    "imageSha256": "7adc6a9d98d793a77e227311beefd1f969859b2367527ef6d40a288792299831"
+  }
+}

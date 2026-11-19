@@ -1,0 +1,1592 @@
+{
+  "schemaVersion": 1,
+  "modelFile": "lack.glb",
+  "product": {
+    "name": "LACK 茶几",
+    "article": "401.042.94",
+    "dimensionsMm": [
+      900,
+      450,
+      550
+    ],
+    "accuracyNote": "整体尺寸来自官方商品页；单件尺寸、孔位、螺纹和动作路径为说明用途的比例示意，不能用于钻孔、配五金或制造。"
+  },
+  "sources": [
+    {
+      "id": "ikea-lack-manual",
+      "url": "https://www.ikea.com/gb/en/assembly_instructions/lack-coffee-table-black-brown__AA-472482-3-2.pdf",
+      "localPdf": "references/manual.pdf",
+      "pageCount": 8,
+      "revision": "AA-472482-3"
+    },
+    {
+      "id": "ikea-lack-product",
+      "url": "https://www.ikea.com/gb/en/p/lack-coffee-table-black-brown-40104294/",
+      "localPdf": null,
+      "pageCount": null,
+      "revision": null
+    }
+  ],
+  "partTypes": [
+    {
+      "id": "tabletop",
+      "name": "桌面板",
+      "code": null,
+      "quantity": 1,
+      "isTool": false,
+      "dimensionStatus": "illustrative; individual dimensions absent from PDF",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "step1",
+          "observation": "One large rectangular panel receives four double-ended screws"
+        }
+      ],
+      "comparison": {
+        "referenceImage": "references/parts/tabletop.png",
+        "modelImage": "parts/tabletop.png",
+        "page": 4
+      }
+    },
+    {
+      "id": "leg",
+      "name": "桌腿",
+      "code": null,
+      "quantity": 4,
+      "isTool": false,
+      "dimensionStatus": "illustrative; individual dimensions absent from PDF",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "step2",
+          "observation": "Four repeated leg attachments, printed4x"
+        }
+      ],
+      "comparison": {
+        "referenceImage": "references/parts/leg.png",
+        "modelImage": "parts/leg.png",
+        "page": 4
+      }
+    },
+    {
+      "id": "shelf",
+      "name": "下层搁板",
+      "code": null,
+      "quantity": 1,
+      "isTool": false,
+      "dimensionStatus": "illustrative; individual dimensions absent from PDF",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 7,
+          "region": "step7",
+          "observation": "One panel tilts into place between legs"
+        }
+      ],
+      "comparison": {
+        "referenceImage": "references/parts/shelf.png",
+        "modelImage": "parts/shelf.png",
+        "page": 7
+      }
+    },
+    {
+      "id": "115980",
+      "name": "双头连接螺钉",
+      "code": "115980",
+      "quantity": 4,
+      "isTool": false,
+      "dimensionStatus": "illustrative; individual dimensions absent from PDF",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "hardware inventory, upper left",
+          "observation": "115980 printed next to double-ended screw;4x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "step1",
+          "observation": "115980 repeated4x in tabletop corner positions"
+        }
+      ],
+      "comparison": {
+        "referenceImage": "references/parts/115980.png",
+        "modelImage": "parts/115980.png",
+        "page": 3
+      },
+      "visualFeatures": {
+        "sourcePage": 3,
+        "features": [
+          "双尖端",
+          "无螺帽",
+          "连续螺旋",
+          "中段过渡环"
+        ],
+        "dimensions": "未提供，按图比例重建；细纹深度及螺距为视觉近似"
+      }
+    },
+    {
+      "id": "108530",
+      "name": "较长十字头螺钉",
+      "code": "108530",
+      "quantity": 4,
+      "isTool": false,
+      "dimensionStatus": "illustrative; individual dimensions absent from PDF",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "hardware inventory, upper centre-left",
+          "observation": "108530 printed beside screw;4x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "step4",
+          "observation": "108530 correct;109041 crossedout;2x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 7,
+          "region": "step6",
+          "observation": "samecorrect/incorrectscrewcomparison;2x"
+        }
+      ],
+      "comparison": {
+        "referenceImage": "references/parts/108530.png",
+        "modelImage": "parts/108530.png",
+        "page": 3
+      },
+      "visualFeatures": {
+        "sourcePage": 3,
+        "features": [
+          "较长杆",
+          "尖端",
+          "连续螺旋",
+          "圆头十字槽"
+        ],
+        "dimensions": "未提供，按图比例重建；细纹深度及螺距为视觉近似"
+      }
+    },
+    {
+      "id": "109041",
+      "name": "较短十字头螺钉",
+      "code": "109041",
+      "quantity": 4,
+      "isTool": false,
+      "dimensionStatus": "illustrative; individual dimensions absent from PDF",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "hardware inventory, upper centre",
+          "observation": "109041 printed beside screw;4x"
+        }
+      ],
+      "comparison": {
+        "referenceImage": "references/parts/109041.png",
+        "modelImage": "parts/109041.png",
+        "page": 3
+      },
+      "visualFeatures": {
+        "sourcePage": 3,
+        "features": [
+          "较短杆",
+          "尖端",
+          "连续螺旋",
+          "圆头十字槽"
+        ],
+        "dimensions": "未提供，按图比例重建；细纹深度及螺距为视觉近似"
+      }
+    },
+    {
+      "id": "120298",
+      "name": "角形连接件",
+      "code": "120298",
+      "quantity": 4,
+      "isTool": false,
+      "dimensionStatus": "illustrative; individual dimensions absent from PDF",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "hardware inventory, upper right",
+          "observation": "120298 printed beside L-shaped bracket;4x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "step4 close-up",
+          "observation": "120298 used with108530"
+        }
+      ],
+      "comparison": {
+        "referenceImage": "references/parts/120298.png",
+        "modelImage": "parts/120298.png",
+        "page": 3
+      },
+      "visualFeatures": {
+        "sourcePage": 3,
+        "features": [
+          "L形折弯",
+          "圆拱端轮廓",
+          "长圆槽",
+          "两侧小圆孔",
+          "另一面圆孔",
+          "槽旁细纹"
+        ],
+        "dimensions": "未提供，按图比例重建；细纹深度及螺距为视觉近似"
+      }
+    },
+    {
+      "id": "120938",
+      "name": "孔位标记定位模板",
+      "code": "120938",
+      "quantity": 1,
+      "isTool": true,
+      "dimensionStatus": "illustrative; individual dimensions absent from PDF",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "lower half",
+          "observation": "120938 printed on long hooked strip;1x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 5,
+          "region": "step3",
+          "observation": "Template aligned withlegend, awlmarksonepoint, templateremoved; repeat2x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "step5",
+          "observation": "Afterturningtable, sametemplate reusedonotherpair oflegs; repeat2x"
+        }
+      ],
+      "comparison": {
+        "referenceImage": "references/parts/120938.png",
+        "modelImage": "parts/120938.png",
+        "page": 3
+      },
+      "visualFeatures": {
+        "sourcePage": 3,
+        "features": [
+          "折边朝左俯视，①箭头向右，③和⑥箭头向下",
+          "②窄、⑤宽，均为同一凹腰窗口轮廓",
+          "末端横直边与单侧圆角",
+          "⑧为偏心定位孔",
+          "近端折钩抵住桌腿端面"
+        ],
+        "dimensions": "未提供，按图比例重建；细纹深度及螺距为视觉近似"
+      }
+    }
+  ],
+  "instances": [
+    {
+      "id": "top-1",
+      "typeId": "tabletop",
+      "nodeName": "top-1",
+      "home": [
+        0,
+        0.425,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "shelf-1",
+      "typeId": "shelf",
+      "nodeName": "shelf-1",
+      "home": [
+        0,
+        0.2335,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "leg-1",
+      "typeId": "leg",
+      "nodeName": "leg-1",
+      "home": [
+        -0.425,
+        0.2,
+        -0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "dowel-1",
+      "typeId": "115980",
+      "nodeName": "dowel-1",
+      "home": [
+        -0.425,
+        0.3825,
+        -0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bracket-1",
+      "typeId": "120298",
+      "nodeName": "bracket-1",
+      "home": [
+        -0.425,
+        0.224,
+        -0.224
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "long-1",
+      "typeId": "108530",
+      "nodeName": "long-1",
+      "home": [
+        -0.425,
+        0.213,
+        -0.223
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "short-1",
+      "typeId": "109041",
+      "nodeName": "short-1",
+      "home": [
+        -0.425,
+        0.224,
+        -0.207
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "leg-2",
+      "typeId": "leg",
+      "nodeName": "leg-2",
+      "home": [
+        0.425,
+        0.2,
+        -0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "dowel-2",
+      "typeId": "115980",
+      "nodeName": "dowel-2",
+      "home": [
+        0.425,
+        0.3825,
+        -0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bracket-2",
+      "typeId": "120298",
+      "nodeName": "bracket-2",
+      "home": [
+        0.425,
+        0.224,
+        -0.224
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "long-2",
+      "typeId": "108530",
+      "nodeName": "long-2",
+      "home": [
+        0.425,
+        0.213,
+        -0.223
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "short-2",
+      "typeId": "109041",
+      "nodeName": "short-2",
+      "home": [
+        0.425,
+        0.224,
+        -0.207
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "leg-3",
+      "typeId": "leg",
+      "nodeName": "leg-3",
+      "home": [
+        -0.425,
+        0.2,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "dowel-3",
+      "typeId": "115980",
+      "nodeName": "dowel-3",
+      "home": [
+        -0.425,
+        0.3825,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bracket-3",
+      "typeId": "120298",
+      "nodeName": "bracket-3",
+      "home": [
+        -0.425,
+        0.224,
+        0.224
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "long-3",
+      "typeId": "108530",
+      "nodeName": "long-3",
+      "home": [
+        -0.425,
+        0.213,
+        0.223
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "short-3",
+      "typeId": "109041",
+      "nodeName": "short-3",
+      "home": [
+        -0.425,
+        0.224,
+        0.207
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "leg-4",
+      "typeId": "leg",
+      "nodeName": "leg-4",
+      "home": [
+        0.425,
+        0.2,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "dowel-4",
+      "typeId": "115980",
+      "nodeName": "dowel-4",
+      "home": [
+        0.425,
+        0.3825,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bracket-4",
+      "typeId": "120298",
+      "nodeName": "bracket-4",
+      "home": [
+        0.425,
+        0.224,
+        0.224
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "long-4",
+      "typeId": "108530",
+      "nodeName": "long-4",
+      "home": [
+        0.425,
+        0.213,
+        0.223
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "short-4",
+      "typeId": "109041",
+      "nodeName": "short-4",
+      "home": [
+        0.425,
+        0.224,
+        0.207
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "template-1",
+      "typeId": "120938",
+      "nodeName": "template-1",
+      "home": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "initialInstalled": [
+    "top-1"
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "number": 1,
+      "title": "旋入桌面连接螺钉",
+      "instruction": "在软垫上倒放桌面，安装面朝上。用手将 4 枚双头螺钉分别旋入四角的孔。",
+      "pdfPages": [
+        4
+      ],
+      "tools": [],
+      "hardware": [
+        "115980 × 4"
+      ],
+      "warnings": [],
+      "pose": "inverted",
+      "camera": {
+        "position": [
+          1.1,
+          -0.7,
+          1.2
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ]
+      },
+      "detail": {
+        "target": [
+          -0.425,
+          0.4,
+          -0.25
+        ],
+        "position": [
+          -0.29,
+          0.28,
+          -0.1
+        ],
+        "label": "115980 双头连接螺钉"
+      },
+      "actions": [
+        {
+          "kind": "install",
+          "targets": [
+            "dowel-1",
+            "dowel-2",
+            "dowel-3",
+            "dowel-4"
+          ],
+          "offset": [
+            0,
+            -0.1,
+            0
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 2
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "upperhalf",
+          "observation": "Fourcorner positions plus115980close-up and4x"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "title": "装上四条桌腿",
+      "instruction": "将桌腿端孔对准露出的螺钉，向下轻压并旋紧。其余三条腿依次装好。",
+      "pdfPages": [
+        4
+      ],
+      "tools": [],
+      "hardware": [],
+      "warnings": [],
+      "pose": "inverted",
+      "camera": {
+        "position": [
+          1.1,
+          -0.7,
+          1.2
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ]
+      },
+      "detail": {
+        "target": [
+          -0.425,
+          0.4,
+          -0.25
+        ],
+        "position": [
+          -0.29,
+          0.28,
+          -0.1
+        ],
+        "label": "桌腿与双头螺钉对位"
+      },
+      "actions": [
+        {
+          "kind": "install",
+          "targets": [
+            "leg-1",
+            "leg-2",
+            "leg-3",
+            "leg-4"
+          ],
+          "offset": [
+            0,
+            -0.18,
+            0
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 2
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "lowerhalf",
+          "observation": "4xleg, downwardarrow, rotationarrows"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "title": "用模板标记第一对腿",
+      "instruction": "将桌体侧放。把定位模板的折边抵住腿端，用尖锥穿过小孔，在腿的内侧做标记。取下模板，在同侧另一条腿上重复。",
+      "pdfPages": [
+        5
+      ],
+      "tools": [
+        "120938 定位模板（同一个重复使用）",
+        "尖锥/打孔锥"
+      ],
+      "hardware": [],
+      "warnings": [],
+      "pose": "sideA",
+      "camera": {
+        "position": [
+          1.1,
+          0.22,
+          1.2
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ]
+      },
+      "detail": {
+        "target": [
+          -0.425,
+          0.213,
+          -0.224
+        ],
+        "position": [
+          -0.3,
+          0.24,
+          0.02
+        ],
+        "label": "连接局部"
+      },
+      "actions": [
+        {
+          "kind": "mark",
+          "targets": [
+            "template-1"
+          ],
+          "offset": [
+            0,
+            0,
+            0.05
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 0,
+          "tool": {
+            "id": "awl",
+            "contact": [
+              0.006376763713592505,
+              0.213,
+              0.001
+            ],
+            "outward": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "orientation": [
+            0,
+            3.141592653589793,
+            0
+          ],
+          "placements": [
+            [
+              -0.41862323628640746,
+              0,
+              -0.224
+            ],
+            [
+              0.4313767637135925,
+              0,
+              -0.224
+            ]
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 5,
+          "region": "step3wholepage",
+          "observation": "2x shown; templatedownwardarrows, handpressesawl, upwardremoval"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "title": "固定第一对角形连接件",
+      "instruction": "把角形连接件的圆孔对准腿上的标记，用十字螺丝刀旋入一枚长螺钉 108530。同侧另一条腿也装好一个连接件。",
+      "pdfPages": [
+        6
+      ],
+      "tools": [
+        "十字螺丝刀"
+      ],
+      "hardware": [
+        "108530 × 2",
+        "120298 × 2"
+      ],
+      "warnings": [],
+      "pose": "sideA",
+      "camera": {
+        "position": [
+          1.1,
+          0.22,
+          1.2
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ]
+      },
+      "detail": {
+        "target": [
+          -0.425,
+          0.213,
+          -0.224
+        ],
+        "position": [
+          -0.3,
+          0.24,
+          0.02
+        ],
+        "label": "连接局部"
+      },
+      "actions": [
+        {
+          "kind": "install",
+          "targets": [
+            "bracket-1",
+            "bracket-2"
+          ],
+          "offset": [
+            0,
+            0.009,
+            0
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 0
+        },
+        {
+          "kind": "install",
+          "targets": [
+            "long-1"
+          ],
+          "offset": [
+            0,
+            0,
+            0.019
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "turns": 2,
+          "tool": {
+            "id": "screwdriver",
+            "tipOffset": -0.00154999,
+            "driveDistance": 0.014249999999999999
+          }
+        },
+        {
+          "kind": "install",
+          "targets": [
+            "long-2"
+          ],
+          "offset": [
+            0,
+            0,
+            0.019
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "turns": 2,
+          "tool": {
+            "id": "screwdriver",
+            "tipOffset": -0.00154999,
+            "driveDistance": 0.014249999999999999
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "upperhalfstep4",
+          "observation": "108530/109041 correctwrong comparison;2xbracket closeup"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "title": "翻转并标记另一对腿",
+      "instruction": "把桌体翻到另一侧。把定位模板的折边抵住腿端，用尖锥穿过小孔，在腿的内侧做标记。取下模板，在同侧另一条腿上重复。",
+      "pdfPages": [
+        6
+      ],
+      "tools": [
+        "120938 定位模板（同一个重复使用）",
+        "尖锥/打孔锥"
+      ],
+      "hardware": [],
+      "warnings": [],
+      "pose": "sideB",
+      "camera": {
+        "position": [
+          1.1,
+          0.22,
+          -1.2
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ]
+      },
+      "detail": {
+        "target": [
+          -0.425,
+          0.213,
+          0.224
+        ],
+        "position": [
+          -0.3,
+          0.06,
+          -0.02
+        ],
+        "label": "连接局部"
+      },
+      "actions": [
+        {
+          "kind": "mark",
+          "targets": [
+            "template-1"
+          ],
+          "offset": [
+            0,
+            0,
+            -0.05
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 0,
+          "tool": {
+            "id": "awl",
+            "contact": [
+              0.006376763713592505,
+              0.213,
+              0.001
+            ],
+            "outward": [
+              0,
+              0,
+              -1
+            ]
+          },
+          "orientation": [
+            0,
+            0,
+            0
+          ],
+          "placements": [
+            [
+              -0.4313767637135925,
+              0,
+              0.224
+            ],
+            [
+              0.41862323628640746,
+              0,
+              0.224
+            ]
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "lowerhalfstep5",
+          "observation": "Tableturnoverarrow;2xtemplate marks"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "number": 6,
+      "title": "固定余下两个连接件",
+      "instruction": "把角形连接件的圆孔对准腿上的标记，用十字螺丝刀旋入一枚长螺钉 108530。同侧另一条腿也装好一个连接件。",
+      "pdfPages": [
+        7
+      ],
+      "tools": [
+        "十字螺丝刀"
+      ],
+      "hardware": [
+        "108530 × 2",
+        "120298 × 2"
+      ],
+      "warnings": [],
+      "pose": "sideB",
+      "camera": {
+        "position": [
+          1.1,
+          0.22,
+          -1.2
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ]
+      },
+      "detail": {
+        "target": [
+          -0.425,
+          0.213,
+          0.224
+        ],
+        "position": [
+          -0.3,
+          0.06,
+          -0.02
+        ],
+        "label": "连接局部"
+      },
+      "actions": [
+        {
+          "kind": "install",
+          "targets": [
+            "bracket-3",
+            "bracket-4"
+          ],
+          "offset": [
+            0,
+            0.009,
+            0
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 0
+        },
+        {
+          "kind": "install",
+          "targets": [
+            "long-3"
+          ],
+          "offset": [
+            0,
+            0,
+            -0.019
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "turns": 2,
+          "tool": {
+            "id": "screwdriver",
+            "tipOffset": -0.00154999,
+            "driveDistance": 0.014249999999999999
+          }
+        },
+        {
+          "kind": "install",
+          "targets": [
+            "long-4"
+          ],
+          "offset": [
+            0,
+            0,
+            -0.019
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "turns": 2,
+          "tool": {
+            "id": "screwdriver",
+            "tipOffset": -0.00154999,
+            "driveDistance": 0.014249999999999999
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 7,
+          "region": "upperhalfstep6",
+          "observation": "Correctlongscrew/crossedshortscrew;2x"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "number": 7,
+      "title": "倾斜放入搁板",
+      "instruction": "将搁板倾斜送入四条腿之间，放平，让四角的孔分别对准连接件的长孔。",
+      "pdfPages": [
+        7
+      ],
+      "tools": [],
+      "hardware": [],
+      "warnings": [],
+      "pose": "sideB",
+      "camera": {
+        "position": [
+          1.1,
+          0.22,
+          -1.2
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ]
+      },
+      "detail": {
+        "target": [
+          -0.425,
+          0.213,
+          0.224
+        ],
+        "position": [
+          -0.3,
+          0.06,
+          -0.02
+        ],
+        "label": "连接局部"
+      },
+      "actions": [
+        {
+          "kind": "install",
+          "targets": [
+            "shelf-1"
+          ],
+          "offset": [
+            0,
+            -0.18,
+            0
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 0,
+          "startRotation": [
+            0.22,
+            0,
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 7,
+          "region": "lowerhalfstep7",
+          "observation": "Paneltiltedinwardalongcurvedarrow;handpointsatpanelcorner"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "number": 8,
+      "title": "固定搁板四角",
+      "instruction": "用十字螺丝刀将 4 枚短螺钉分别穿过连接件的长孔，固定搁板四角。装好后把桌子扶正。",
+      "pdfPages": [
+        8
+      ],
+      "tools": [
+        "十字螺丝刀"
+      ],
+      "hardware": [
+        "109041 × 4"
+      ],
+      "warnings": [],
+      "pose": "sideB",
+      "camera": {
+        "position": [
+          1.1,
+          0.22,
+          -1.2
+        ],
+        "target": [
+          0,
+          0.22,
+          0
+        ]
+      },
+      "detail": {
+        "target": [
+          -0.425,
+          0.213,
+          0.224
+        ],
+        "position": [
+          -0.3,
+          0.06,
+          -0.02
+        ],
+        "label": "连接局部"
+      },
+      "actions": [
+        {
+          "kind": "install",
+          "targets": [
+            "short-1"
+          ],
+          "offset": [
+            0,
+            -0.08,
+            0
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 2,
+          "tool": {
+            "id": "screwdriver",
+            "tipOffset": -0.00154999,
+            "driveDistance": 0.009000000000000001
+          }
+        },
+        {
+          "kind": "install",
+          "targets": [
+            "short-2"
+          ],
+          "offset": [
+            0,
+            -0.08,
+            0
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 2,
+          "tool": {
+            "id": "screwdriver",
+            "tipOffset": -0.00154999,
+            "driveDistance": 0.009000000000000001
+          }
+        },
+        {
+          "kind": "install",
+          "targets": [
+            "short-3"
+          ],
+          "offset": [
+            0,
+            -0.08,
+            0
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 2,
+          "tool": {
+            "id": "screwdriver",
+            "tipOffset": -0.00154999,
+            "driveDistance": 0.009000000000000001
+          }
+        },
+        {
+          "kind": "install",
+          "targets": [
+            "short-4"
+          ],
+          "offset": [
+            0,
+            -0.08,
+            0
+          ],
+          "endOffset": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "turns": 2,
+          "tool": {
+            "id": "screwdriver",
+            "tipOffset": -0.00154999,
+            "driveDistance": 0.009000000000000001
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 8,
+          "region": "fourcalloutslabelled1-4",
+          "observation": "Fourshortscrewsenterpanelthroughuprightbracketface/slot"
+        }
+      ]
+    }
+  ],
+  "unknowns": [
+    {
+      "field": "part-dimensions",
+      "reason": "桌面厚度、腿截面/长度、搁板长宽厚均未标注；900×550×450仅为产品整体尺寸。",
+      "impact": "Canbuildillustrativeproportionmodel; cannotclaimmanufacturingCADorprecise fit."
+    },
+    {
+      "field": "hole-coordinates",
+      "reason": "桌面四角孔、腿内侧连接件孔、搁板孔只有图示相对位置，无毫米坐标。模板120938的物理尺寸也未给出。",
+      "impact": "NeedmeasuredpartorCADbeforeexact drilling/fit guidance."
+    },
+    {
+      "field": "fastener-dimensions",
+      "reason": "给出了零件号与相对长短，但没有直径、长度、螺距和驱动规格数值。",
+      "impact": "Usevisual schematicfasteners,labelbyrealID; noexacthardware replacementclaim."
+    },
+    {
+      "field": "mechanical-values",
+      "reason": "无扭矩、锁紧圈数、摩擦/胶层等参数。",
+      "impact": "Animationturncount/durationmustbelabelledillustrative."
+    },
+    {
+      "field": "video-variant",
+      "reason": "只确认视频文字LACKcoffee table，未确定视频中的商品货号与尺寸。",
+      "impact": "This isachosenofficialpilot, notprovenexactreplicaofvideoproduct."
+    }
+  ],
+  "geometryEvidence": {
+    "known": "Official overall900x550x450mm;6structuralpieces+16hardware;1reusabletool",
+    "illustrativeDimensionsMm": {
+      "tabletop": [
+        900,
+        50,
+        550
+      ],
+      "leg": [
+        50,
+        400,
+        50
+      ],
+      "shelf": [
+        900,
+        15,
+        450
+      ],
+      "shelfBottomHeight": 226,
+      "bracketLateralInsetFromLegCenter": 0,
+      "templateLength": 223.68,
+      "templateWidth": 37.25,
+      "doubleEndedScrewLength": 35,
+      "longScrewLength": 19,
+      "shortScrewLength": 12
+    },
+    "basis": "PDF p3 hardware outlines, p5 template approximately0.5–0.55 of leg length and a strip against one long leg edge, with the other edge of the leg exposed; p7/p8 shelf length near tabletop length; leg outer faces align tabletop edges. All are visual reconstruction, not measured dimensions.",
+    "coordinateSystem": "glTF Y-up; metres; assembled upright pose",
+    "legTopHoleEvidence": "Functional mating-hole inference from step2; not directly exposed by PDF. Leg side marking/drilling is not represented as a factory-pre-drilled hole.",
+    "mechanics": "Visible hardware morphology reconstructed from official PDF: pointed continuous helix; arched slotted bracket with flanking holes; traced template openings and hook. Exact metric thread/fit specifications are unavailable.",
+    "toolContactAnchors": {
+      "driveSockets": {
+        "long-1": -0.00154999,
+        "short-1": -0.00154999,
+        "long-2": -0.00154999,
+        "short-2": -0.00154999,
+        "long-3": -0.00154999,
+        "short-3": -0.00154999,
+        "long-4": -0.00154999,
+        "short-4": -0.00154999
+      },
+      "method": "Actual final Blender mesh central ray from outside head toward shaft; negative offset relative to head origin along install axis",
+      "templateLocalMarkHole": [
+        0.006376763713592505,
+        0.213,
+        0
+      ],
+      "templateLocalWoodContact": [
+        0.006376763713592505,
+        0.213,
+        0.001
+      ],
+      "templateLocalOutward": [
+        0,
+        0,
+        -1
+      ],
+      "toolDimensions": "Auxiliary hand tools150mm total,80mm shaft and70mm grip; illustrative,not official specifications"
+    }
+  },
+  "toolAssets": {
+    "file": "tools.glb",
+    "items": [
+      {
+        "id": "awl",
+        "nodeName": "awl",
+        "name": "尖锥"
+      },
+      {
+        "id": "screwdriver",
+        "nodeName": "screwdriver",
+        "name": "十字螺丝刀"
+      }
+    ]
+  }
+}

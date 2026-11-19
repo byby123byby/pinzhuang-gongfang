@@ -1,0 +1,762 @@
+{
+  "schemaVersion": 1,
+  "extractionStatus": "visually_reviewed_8_of_8_pages",
+  "sources": [
+    {
+      "id": "ikea-lack-manual",
+      "type": "official_assembly_pdf",
+      "url": "https://www.ikea.com/gb/en/assembly_instructions/lack-coffee-table-black-brown__AA-472482-3-2.pdf",
+      "localPath": "work/manual-pipeline/app/public/references/manual.pdf",
+      "documentId": "AA-472482-3",
+      "printedRevisionDate": "2018-03-07",
+      "pageCount": 8,
+      "sha256": "267310e6c272197f46c8d8f2465c6c70b33a974a4796359557eb113b4c659ecc",
+      "retrievedAt": "2026-11-18T14:10:14.303562+00:00",
+      "linkedFrom": "https://www.ikea.com/gb/en/p/lack-coffee-table-black-brown-40104294/",
+      "visualReview": "All8renderedpagesinspected; populated from actual diagrams, not text-only extraction"
+    },
+    {
+      "id": "ikea-lack-product",
+      "type": "official_product_page",
+      "url": "https://www.ikea.com/gb/en/p/lack-coffee-table-black-brown-40104294/",
+      "articleNumber": "401.042.94",
+      "name": "LACK Coffee table",
+      "color": "black-brown",
+      "overallDimensionsMm": {
+        "length": 900,
+        "width": 550,
+        "height": 450
+      },
+      "dimensionEvidence": "Official Weight & measurements section; dimensions are not supplied by assembly PDF",
+      "maxTabletopLoadKg": 20,
+      "variantScope": "Selected official90x55cm pilot. Exact size/SKU of the social video remains unverified. PDFcoverillustratesmorethanoneproportion; do not inferallvariantsare90x55."
+    }
+  ],
+  "product": {
+    "family": "LACK",
+    "selectedArticleNumber": "401.042.94",
+    "name": "茶几",
+    "color": "黑褐色",
+    "overallDimensionsMm": {
+      "length": 900,
+      "width": 550,
+      "height": 450
+    },
+    "variantMatchToVideo": "unverified"
+  },
+  "inventory": [
+    {
+      "id": "tabletop",
+      "manufacturerPartNumber": null,
+      "label": "桌面板",
+      "quantity": 1,
+      "category": "structural",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "step1",
+          "observation": "One large rectangular panel receives four double-ended screws"
+        }
+      ],
+      "identityStatus": "agent-local semantic ID; no printed part number"
+    },
+    {
+      "id": "leg",
+      "manufacturerPartNumber": null,
+      "label": "桌腿",
+      "quantity": 4,
+      "category": "structural",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "step2",
+          "observation": "Four repeated leg attachments, printed4x"
+        }
+      ],
+      "identityStatus": "agent-local semantic ID; no printed part number"
+    },
+    {
+      "id": "shelf",
+      "manufacturerPartNumber": null,
+      "label": "下层搁板",
+      "quantity": 1,
+      "category": "structural",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 7,
+          "region": "step7",
+          "observation": "One panel tilts into place between legs"
+        }
+      ],
+      "identityStatus": "agent-local semantic ID; no printed part number"
+    },
+    {
+      "id": "115980",
+      "manufacturerPartNumber": "115980",
+      "label": "双头连接螺钉",
+      "quantity": 4,
+      "category": "fastener",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "hardware inventory, upper left",
+          "observation": "115980 printed next to double-ended screw;4x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "step1",
+          "observation": "115980 repeated4x in tabletop corner positions"
+        }
+      ],
+      "dimensionsMm": null
+    },
+    {
+      "id": "108530",
+      "manufacturerPartNumber": "108530",
+      "label": "较长十字头螺钉",
+      "quantity": 4,
+      "category": "fastener",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "hardware inventory, upper centre-left",
+          "observation": "108530 printed beside screw;4x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "step4",
+          "observation": "108530 correct;109041 crossedout;2x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 7,
+          "region": "step6",
+          "observation": "samecorrect/incorrectscrewcomparison;2x"
+        }
+      ],
+      "dimensionsMm": null
+    },
+    {
+      "id": "109041",
+      "manufacturerPartNumber": "109041",
+      "label": "较短十字头螺钉",
+      "quantity": 4,
+      "category": "fastener",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "hardware inventory, upper centre",
+          "observation": "109041 printed beside screw;4x"
+        }
+      ],
+      "dimensionsMm": null
+    },
+    {
+      "id": "120298",
+      "manufacturerPartNumber": "120298",
+      "label": "角形连接件",
+      "quantity": 4,
+      "category": "connector",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "hardware inventory, upper right",
+          "observation": "120298 printed beside L-shaped bracket;4x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "step4 close-up",
+          "observation": "120298 used with108530"
+        }
+      ],
+      "material": null,
+      "dimensionsMm": null
+    },
+    {
+      "id": "120938",
+      "manufacturerPartNumber": "120938",
+      "label": "孔位标记定位模板",
+      "quantity": 1,
+      "category": "reusable_assembly_tool",
+      "includedInAssembledProduct": false,
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 3,
+          "region": "lower half",
+          "observation": "120938 printed on long hooked strip;1x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 5,
+          "region": "step3",
+          "observation": "Template aligned withlegend, awlmarksonepoint, templateremoved; repeat2x"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "step5",
+          "observation": "Afterturningtable, sametemplate reusedonotherpair oflegs; repeat2x"
+        }
+      ],
+      "dimensionsMm": null
+    }
+  ],
+  "counts": {
+    "structuralPieces": 6,
+    "assembledHardwarePieces": 16,
+    "assembledPhysicalObjects": 22,
+    "includedReusableTemplate": 1,
+    "totalPhysicalItemsIncludingTemplate": 23,
+    "numberedManualSteps": 8
+  },
+  "tools": [
+    {
+      "id": "screwdriver",
+      "label": "十字螺丝刀",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 2,
+          "region": "toptoolpanel",
+          "observation": "Cross-headtip drawn"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "step4",
+          "observation": "Screwdriver drives108530"
+        }
+      ],
+      "includedInHardwareList": false
+    },
+    {
+      "id": "hammer",
+      "label": "锤子",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 2,
+          "region": "toptoolpanel",
+          "observation": "Hammer icon"
+        }
+      ],
+      "includedInHardwareList": false,
+      "useNote": "Shownaspreparationtool; numberedstepsdo not explicitly depict hammeruse."
+    },
+    {
+      "id": "awl",
+      "label": "尖锥/打孔锥",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 2,
+          "region": "toptoolpanel",
+          "observation": "Pointedmarkingtoolicon"
+        },
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 5,
+          "region": "step3",
+          "observation": "Tipmarkslegthroughtemplate"
+        }
+      ],
+      "includedInHardwareList": false
+    }
+  ],
+  "steps": [
+    {
+      "number": 1,
+      "page": 4,
+      "title": "旋入桌面连接螺钉",
+      "instruction": "桌面装配面朝上，分别将4枚115980旋入四角示意孔位。",
+      "consumes": {
+        "115980": 4
+      },
+      "uses": [
+        "tabletop"
+      ],
+      "newParts": [
+        "115980×4"
+      ],
+      "actions": [
+        "align",
+        "screw_in"
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "upperhalf",
+          "observation": "Fourcorner positions plus115980close-up and4x"
+        }
+      ],
+      "unknowns": [
+        "corner offsets",
+        "insertiondepth",
+        "numberofturns",
+        "torque"
+      ],
+      "assemblyPose": {
+        "description": "桌面装配面朝上、桌腿朝上",
+        "evidencePage": 4,
+        "status": "observed_in_page_diagram",
+        "absoluteWorldAxis": "not specified by PDF; viewer coordinate choice must not be confused with source fact"
+      }
+    },
+    {
+      "number": 2,
+      "page": 4,
+      "title": "装上四条桌腿",
+      "instruction": "将每条桌腿对准露出的双头螺钉，边按下边旋紧，重复4次。",
+      "consumes": {
+        "leg": 4
+      },
+      "uses": [
+        "tabletop",
+        "115980×4"
+      ],
+      "newParts": [
+        "leg×4"
+      ],
+      "actions": [
+        "align",
+        "translate",
+        "rotate_to_thread"
+      ],
+      "dependencies": [
+        1
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 4,
+          "region": "lowerhalf",
+          "observation": "4xleg, downwardarrow, rotationarrows"
+        }
+      ],
+      "unknowns": [
+        "threadgeometry",
+        "legsection",
+        "finallegrotationorientationexactangle"
+      ],
+      "assemblyPose": {
+        "description": "桌面装配面朝上、桌腿朝上",
+        "evidencePage": 4,
+        "status": "observed_in_page_diagram",
+        "absoluteWorldAxis": "not specified by PDF; viewer coordinate choice must not be confused with source fact"
+      }
+    },
+    {
+      "number": 3,
+      "page": 5,
+      "title": "用模板标记第一对腿",
+      "instruction": "将桌体侧放。把120938的弯边贴合腿端，在朝内的腿面定位并用尖锥标记；取下模板，另一条腿重复。",
+      "consumes": {},
+      "uses": [
+        "120938",
+        "awl",
+        "leg×2"
+      ],
+      "newParts": [],
+      "actions": [
+        "reorient_assembly",
+        "place_template",
+        "mark",
+        "remove_template",
+        "repeat"
+      ],
+      "dependencies": [
+        2
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 5,
+          "region": "step3wholepage",
+          "observation": "2x shown; templatedownwardarrows, handpressesawl, upwardremoval"
+        }
+      ],
+      "unknowns": [
+        "template length",
+        "mark distancefromlegtip",
+        "holedepth"
+      ],
+      "important": "2x means repeaton2legs; not2templates.",
+      "assemblyPose": {
+        "description": "桌体侧放，桌面板近似竖直、桌腿近似水平",
+        "evidencePage": 5,
+        "status": "observed_in_page_diagram",
+        "absoluteWorldAxis": "not specified by PDF; viewer coordinate choice must not be confused with source fact",
+        "transition": {
+          "from": "步骤2的倒置桌体",
+          "to": "侧放桌体",
+          "evidence": "p4 step2 vs p5 step3 diagram posture change",
+          "explicitRotationArrow": false,
+          "interpretation": "Necessary transition inferred from adjacent illustrations; no extra numbered manual step or numerical rotation axis given."
+        }
+      }
+    },
+    {
+      "number": 4,
+      "page": 6,
+      "title": "固定第一对角形连接件",
+      "instruction": "在刚标记的两个位置，各用1枚108530固定1个120298。此处明确不能用短螺钉109041。",
+      "consumes": {
+        "108530": 2,
+        "120298": 2
+      },
+      "uses": [
+        "screwdriver",
+        "leg×2"
+      ],
+      "newParts": [
+        "108530×2",
+        "120298×2"
+      ],
+      "actions": [
+        "align",
+        "screw_in"
+      ],
+      "dependencies": [
+        3
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "upperhalfstep4",
+          "observation": "108530/109041 correctwrong comparison;2xbracket closeup"
+        }
+      ],
+      "unknowns": [
+        "bracket dimensions",
+        "pilot hole specification",
+        "torque"
+      ],
+      "assemblyPose": {
+        "description": "桌体侧放，桌面板近似竖直、桌腿近似水平",
+        "evidencePage": 6,
+        "status": "observed_in_page_diagram",
+        "absoluteWorldAxis": "not specified by PDF; viewer coordinate choice must not be confused with source fact"
+      }
+    },
+    {
+      "number": 5,
+      "page": 6,
+      "title": "翻转并标记另一对腿",
+      "instruction": "按图翻转桌体，使用同一120938模板对另一对桌腿做相同标记并移走模板。",
+      "consumes": {},
+      "uses": [
+        "120938",
+        "awl",
+        "leg×2"
+      ],
+      "newParts": [],
+      "actions": [
+        "reorient_assembly",
+        "place_template",
+        "mark",
+        "remove_template",
+        "repeat"
+      ],
+      "dependencies": [
+        4
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 6,
+          "region": "lowerhalfstep5",
+          "observation": "Tableturnoverarrow;2xtemplate marks"
+        }
+      ],
+      "unknowns": [
+        "exactassemblyrotationaxis/durationnotnumeric"
+      ],
+      "important": "No newtemplateisconsumed.",
+      "assemblyPose": {
+        "description": "桌体侧放，桌面板近似竖直、桌腿近似水平",
+        "evidencePage": 6,
+        "status": "observed_in_page_diagram",
+        "absoluteWorldAxis": "not specified by PDF; viewer coordinate choice must not be confused with source fact",
+        "transition": {
+          "from": "第一对腿连接件已安装的侧放桌体",
+          "to": "翻到另一侧，以标记另一对腿",
+          "evidence": "p6 step5 small whole-table curved rotation arrow",
+          "explicitRotationArrow": true,
+          "interpretation": "Reuse same template; exact numeric rotation axis and trajectory are not specified."
+        }
+      }
+    },
+    {
+      "number": 6,
+      "page": 7,
+      "title": "固定余下两个连接件",
+      "instruction": "用余下2枚108530固定余下2个120298；继续避免混用109041。",
+      "consumes": {
+        "108530": 2,
+        "120298": 2
+      },
+      "uses": [
+        "screwdriver",
+        "leg×2"
+      ],
+      "newParts": [
+        "108530×2",
+        "120298×2"
+      ],
+      "actions": [
+        "align",
+        "screw_in"
+      ],
+      "dependencies": [
+        5
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 7,
+          "region": "upperhalfstep6",
+          "observation": "Correctlongscrew/crossedshortscrew;2x"
+        }
+      ],
+      "unknowns": [
+        "bracket dimensions",
+        "torque"
+      ],
+      "assemblyPose": {
+        "description": "桌体侧放，桌面板近似竖直、桌腿近似水平",
+        "evidencePage": 7,
+        "status": "observed_in_page_diagram",
+        "absoluteWorldAxis": "not specified by PDF; viewer coordinate choice must not be confused with source fact"
+      }
+    },
+    {
+      "number": 7,
+      "page": 7,
+      "title": "倾斜放入搁板",
+      "instruction": "按箭头将搁板倾斜移入四腿之间，落到四个角形连接件位置，使搁板的示意孔面与连接件对应。",
+      "consumes": {
+        "shelf": 1
+      },
+      "uses": [
+        "120298×4"
+      ],
+      "newParts": [
+        "shelf"
+      ],
+      "actions": [
+        "tilt",
+        "translate",
+        "rotate_into_place"
+      ],
+      "dependencies": [
+        6
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 7,
+          "region": "lowerhalfstep7",
+          "observation": "Paneltiltedinwardalongcurvedarrow;handpointsatpanelcorner"
+        }
+      ],
+      "unknowns": [
+        "shelf length/width/thickness",
+        "numerictrajectory",
+        "clearance"
+      ],
+      "assemblyPose": {
+        "description": "桌体侧放，桌面板近似竖直、桌腿近似水平",
+        "evidencePage": 7,
+        "status": "observed_in_page_diagram",
+        "absoluteWorldAxis": "not specified by PDF; viewer coordinate choice must not be confused with source fact"
+      }
+    },
+    {
+      "number": 8,
+      "page": 8,
+      "title": "固定搁板四角",
+      "instruction": "按1至4的四个近景顺序，通过连接件的长孔固定搁板。",
+      "consumes": {
+        "109041": 4
+      },
+      "uses": [
+        "screwdriver",
+        "shelf",
+        "120298×4"
+      ],
+      "newParts": [
+        "109041×4"
+      ],
+      "actions": [
+        "screw_in",
+        "repeat"
+      ],
+      "dependencies": [
+        7
+      ],
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 8,
+          "region": "fourcalloutslabelled1-4",
+          "observation": "Fourshortscrewsenterpanelthroughuprightbracketface/slot"
+        }
+      ],
+      "partIdentityConfidence": "inferred_by_inventory_conservation_and_drawn_short_screw; step8doesnotprint109041",
+      "inference": "Only109041×4remain aftersteps1,4,6; not a separatelyprintedlabelonpage8",
+      "unknowns": [
+        "torque",
+        "screwpenetrationdepth"
+      ],
+      "assemblyPose": {
+        "description": "桌体侧放，桌面板近似竖直、桌腿近似水平",
+        "evidencePage": 8,
+        "status": "observed_in_page_diagram",
+        "absoluteWorldAxis": "not specified by PDF; viewer coordinate choice must not be confused with source fact"
+      },
+      "subactions": [
+        {
+          "id": "1",
+          "type": "fasten_shelf_at_callout",
+          "target": "PDF page8 callout1",
+          "fastener": "109041",
+          "quantity": 1,
+          "fastenerIdentityStatus": "inferred from drawn short screw and remaining inventory",
+          "evidence": "Matching numbered close-up and leaderline onpage8"
+        },
+        {
+          "id": "2",
+          "type": "fasten_shelf_at_callout",
+          "target": "PDF page8 callout2",
+          "fastener": "109041",
+          "quantity": 1,
+          "fastenerIdentityStatus": "inferred from drawn short screw and remaining inventory",
+          "evidence": "Matching numbered close-up and leaderline onpage8"
+        },
+        {
+          "id": "3",
+          "type": "fasten_shelf_at_callout",
+          "target": "PDF page8 callout3",
+          "fastener": "109041",
+          "quantity": 1,
+          "fastenerIdentityStatus": "inferred from drawn short screw and remaining inventory",
+          "evidence": "Matching numbered close-up and leaderline onpage8"
+        },
+        {
+          "id": "4",
+          "type": "fasten_shelf_at_callout",
+          "target": "PDF page8 callout4",
+          "fastener": "109041",
+          "quantity": 1,
+          "fastenerIdentityStatus": "inferred from drawn short screw and remaining inventory",
+          "evidence": "Matching numbered close-up and leaderline onpage8"
+        }
+      ],
+      "clarification": "图1-4是四个连接位置的局部图；图1中既有腿侧螺丝已就位，螺丝刀操作另一枚横向短螺丝。未观察到拆卸/松开原有108530的明确指令，不能把松原螺丝加入确定步骤。",
+      "detailEvidence": "lack-pages/page-8-detail-1.png"
+    }
+  ],
+  "warnings": [
+    {
+      "text": "在保护垫/柔软保护面上装配，避免损伤家具。",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 2,
+          "region": "middlepanel",
+          "observation": "Crossedoutunprotectedfloorcontact and approvedmatundersurface"
+        }
+      ]
+    },
+    {
+      "text": "如有疑问，联系IKEA。",
+      "evidence": [
+        {
+          "sourceId": "ikea-lack-manual",
+          "page": 2,
+          "region": "bottompanel",
+          "observation": "Questionbubble andphone/IKEAstoreillustration"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "part-dimensions",
+      "description": "桌面厚度、腿截面/长度、搁板长宽厚均未标注；900×550×450仅为产品整体尺寸。",
+      "impact": "Canbuildillustrativeproportionmodel; cannotclaimmanufacturingCADorprecise fit."
+    },
+    {
+      "id": "hole-coordinates",
+      "description": "桌面四角孔、腿内侧连接件孔、搁板孔只有图示相对位置，无毫米坐标。模板120938的物理尺寸也未给出。",
+      "impact": "NeedmeasuredpartorCADbeforeexact drilling/fit guidance."
+    },
+    {
+      "id": "fastener-dimensions",
+      "description": "给出了零件号与相对长短，但没有直径、长度、螺距和驱动规格数值。",
+      "impact": "Usevisual schematicfasteners,labelbyrealID; noexacthardware replacementclaim."
+    },
+    {
+      "id": "mechanical-values",
+      "description": "无扭矩、锁紧圈数、摩擦/胶层等参数。",
+      "impact": "Animationturncount/durationmustbelabelledillustrative."
+    },
+    {
+      "id": "video-variant",
+      "description": "只确认视频文字LACKcoffee table，未确定视频中的商品货号与尺寸。",
+      "impact": "This isachosenofficialpilot, notprovenexactreplicaofvideoproduct."
+    }
+  ],
+  "reviewNotes": [
+    "No dimensions inferred from perspective line drawings are treated as measured facts.",
+    "Structural semantic IDs are agent-generated; manufacturer hardware IDs transcribed exactly.",
+    "Step8shortscrewidentitymarkedasinference.",
+    "No3DgeometryorAholoassetswerecreatedbythisagent."
+  ],
+  "environment": {
+    "pythonExecutable": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "pythonVersion": "3.9.6",
+    "pypdfVersion": "6.10.2",
+    "pymupdfVersion": "1.26.5",
+    "pdftoppm": "pdftoppm",
+    "pdfinfo": "pdfinfo",
+    "renderCommand": "pdftoppm -scale-to 1800 -png lack-AA-472482-3.pdf lack-pages/page",
+    "detailRender": "PyMuPDF page.get_pixmap(matrix=fitz.Matrix(3,3), clip=fitz.Rect(25,80,295,280))",
+    "newDependenciesInstalled": false
+  },
+  "presentationPose": {
+    "uprightFinalPreview": {
+      "evidence": "PDFcoverp1 shows upright assembledproduct",
+      "instructionStatus": "presentation state, not additional numbered assembly step",
+      "transitionAfterStep8": "Unnumbered inferred display transition; should not change the manual8step count."
+    }
+  },
+  "independentReview": [
+    {
+      "findingId": "step8-no-loosening-evidence",
+      "reviewer": "manual_evidence",
+      "raisedBy": "parent/model-planning interpretation",
+      "candidateInterpretation": "步骤8先松开原腿侧螺丝、调整角码，再固定搁板",
+      "status": "rejected_after_detail_review",
+      "reason": "Page8callout1 shows the existing leg-side screw already seated above; screwdriver targets another horizontal short screw through the bracket slot into the shelf. No explicit loosening instruction observed.",
+      "evidence": "lack-pages/page-8-detail-1.png",
+      "resolution": "Keep4shelf fasteningcallouts;do not addloosening/adjustment operation",
+      "acceptedByParent": true,
+      "recordedAt": "2026-11-18T14:11:46.380015+00:00"
+    }
+  ]
+}

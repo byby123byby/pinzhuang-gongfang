@@ -1,0 +1,1245 @@
+{
+  "title": "海边小屋",
+  "units": "mm",
+  "frame": {
+    "wallThickness": 1,
+    "eaveZ": 56,
+    "ridgeZ": 72,
+    "gableHalfWidth": 24
+  },
+  "joint": {
+    "tenon": [
+      10,
+      1,
+      1.8
+    ],
+    "socket": [
+      10.25,
+      1.18,
+      2
+    ]
+  },
+  "parts": [
+    {
+      "id": "P01",
+      "name": "底座",
+      "kind": "base",
+      "center": [
+        8,
+        0
+      ],
+      "size": [
+        88,
+        68,
+        2
+      ],
+      "approach": [
+        0,
+        0,
+        12
+      ],
+      "instruction": "将底座平放，八个榫槽朝上；长边为小屋正面，前方留出门廊位置。",
+      "color": "#dbc290",
+      "flatNormal": [
+        0,
+        1,
+        0
+      ],
+      "board": "A",
+      "boardLabel": "A01",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P02",
+      "name": "主屋右山墙",
+      "kind": "gable",
+      "center": [
+        0,
+        33.5
+      ],
+      "tenons": [
+        -14,
+        14
+      ],
+      "approach": [
+        0,
+        0,
+        26
+      ],
+      "instruction": "让三角形山墙朝右，两个榫头对准底座右侧槽位，垂直插到底。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        1,
+        0,
+        0
+      ],
+      "board": "A",
+      "boardLabel": "A02",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P03",
+      "name": "主屋后墙",
+      "kind": "wall",
+      "center": [
+        -23.5,
+        0
+      ],
+      "length": 65.8,
+      "tenons": [
+        -21,
+        21
+      ],
+      "approach": [
+        0,
+        0,
+        26
+      ],
+      "instruction": "将长方形后墙立起，插入后侧两个榫槽，与右山墙保持直角。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        0,
+        0,
+        -1
+      ],
+      "board": "A",
+      "boardLabel": "A03",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P04",
+      "name": "主屋前墙",
+      "kind": "wall",
+      "center": [
+        23.5,
+        0
+      ],
+      "length": 65.8,
+      "tenons": [
+        -21,
+        21
+      ],
+      "approach": [
+        0,
+        0,
+        26
+      ],
+      "instruction": "让印有门窗的一面朝前，将前墙插入前侧两个榫槽。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "A",
+      "boardLabel": "A04",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P05",
+      "name": "主屋左山墙",
+      "kind": "gable",
+      "center": [
+        0,
+        -33.5
+      ],
+      "tenons": [
+        -14,
+        14
+      ],
+      "approach": [
+        0,
+        0,
+        26
+      ],
+      "instruction": "将左山墙插入剩下的两个槽位，四面墙围合成主屋。",
+      "color": "#f2e4c9",
+      "flatNormal": [
+        -1,
+        0,
+        0
+      ],
+      "board": "A",
+      "boardLabel": "A05",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P06",
+      "name": "门板",
+      "kind": "door",
+      "center": [
+        0,
+        -24.45
+      ],
+      "centerZ": 15.2,
+      "width": 14,
+      "height": 24,
+      "thickness": 0.8,
+      "approach": [
+        0,
+        -14,
+        7
+      ],
+      "instruction": "将蓝色门板贴合主屋前墙下方中央，门板底边与门廊地台高度对齐。",
+      "color": "#738e9c",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C01"
+    },
+    {
+      "id": "P07",
+      "name": "二层左窗框",
+      "kind": "window",
+      "center": [
+        -19,
+        -24.375
+      ],
+      "centerZ": 46,
+      "width": 14,
+      "height": 14,
+      "thickness": 0.65,
+      "opening": [
+        10.8,
+        10.8
+      ],
+      "approach": [
+        0,
+        -14,
+        7
+      ],
+      "instruction": "将左窗框放到前墙二层左侧的窗印上，保持四边平行。",
+      "color": "#738e9c",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C02"
+    },
+    {
+      "id": "P08",
+      "name": "二层右窗框",
+      "kind": "window",
+      "center": [
+        19,
+        -24.375
+      ],
+      "centerZ": 46,
+      "width": 14,
+      "height": 14,
+      "thickness": 0.65,
+      "opening": [
+        10.8,
+        10.8
+      ],
+      "approach": [
+        0,
+        -14,
+        7
+      ],
+      "instruction": "将右窗框放到二层右侧，与左窗框保持同一高度。",
+      "color": "#738e9c",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C03"
+    },
+    {
+      "id": "P09",
+      "name": "门廊平台",
+      "kind": "deck",
+      "center": [
+        0,
+        -36
+      ],
+      "size": [
+        62,
+        24,
+        1.2
+      ],
+      "approach": [
+        0,
+        -18,
+        9
+      ],
+      "instruction": "将门廊地台平放在主屋前方，后边紧靠前墙，居中放置。",
+      "color": "#dbc290",
+      "flatNormal": [
+        0,
+        1,
+        0
+      ],
+      "board": "A",
+      "boardLabel": "A06"
+    },
+    {
+      "id": "P10",
+      "name": "左支柱",
+      "kind": "post",
+      "center": [
+        -25,
+        -44
+      ],
+      "footprint": [
+        2.5,
+        2.5
+      ],
+      "deck": "P09",
+      "roof": "P12",
+      "approach": [
+        0,
+        0,
+        19
+      ],
+      "instruction": "将左支柱竖起，落到地台左前角；斜顶较高的一侧朝向房屋。",
+      "color": "#f2e4c9",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "B",
+      "boardLabel": "B01"
+    },
+    {
+      "id": "P11",
+      "name": "右支柱",
+      "kind": "post",
+      "center": [
+        25,
+        -44
+      ],
+      "footprint": [
+        2.5,
+        2.5
+      ],
+      "deck": "P09",
+      "roof": "P12",
+      "approach": [
+        0,
+        0,
+        19
+      ],
+      "instruction": "将右支柱放到右前角，与左支柱平行，斜顶朝向一致。",
+      "color": "#f2e4c9",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "B",
+      "boardLabel": "B02"
+    },
+    {
+      "id": "P40",
+      "name": "门廊中立柱",
+      "kind": "post",
+      "center": [
+        0,
+        -44
+      ],
+      "size": [
+        11,
+        5.5,
+        3.5
+      ],
+      "wallThickness": 0.7,
+      "base": "P33",
+      "approach": [
+        0,
+        0,
+        20
+      ],
+      "instruction": "将中立柱放到门廊地台中央，与左右支柱排成一线，等待屋顶盖上。",
+      "color": "#b9765d",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C14",
+      "footprint": [
+        2.5,
+        2.5
+      ],
+      "deck": "P09",
+      "roof": "P12"
+    },
+    {
+      "id": "P12",
+      "name": "门廊顶",
+      "kind": "porchRoof",
+      "width": 64,
+      "front": [
+        -48,
+        31
+      ],
+      "back": [
+        -24,
+        38
+      ],
+      "thickness": 0.8,
+      "approach": [
+        0,
+        -14,
+        25
+      ],
+      "instruction": "让门廊顶后缘高、前缘低，覆盖三根支柱，向后贴合前墙。",
+      "color": "#b16d56",
+      "flatNormal": [
+        0,
+        0.96,
+        0.27999999999999997
+      ],
+      "board": "B",
+      "boardLabel": "B03"
+    },
+    {
+      "id": "P13",
+      "name": "主屋后坡顶",
+      "kind": "roof",
+      "side": -1,
+      "run": 28,
+      "length": 76,
+      "thickness": 0.8,
+      "approach": [
+        0,
+        14,
+        25
+      ],
+      "instruction": "从后上方放下主屋后坡屋顶，内边对准屋脊，檐口向后。",
+      "color": "#b16d56",
+      "flatNormal": [
+        0,
+        0.8320502943378437,
+        -0.554700196225229
+      ],
+      "board": "B",
+      "boardLabel": "B04",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P14",
+      "name": "主屋前坡顶",
+      "kind": "roof",
+      "side": 1,
+      "run": 28,
+      "length": 76,
+      "thickness": 0.8,
+      "approach": [
+        0,
+        -14,
+        25
+      ],
+      "instruction": "从前上方放下前坡屋顶，与后坡在屋脊合拢，预留阁楼位置。",
+      "color": "#b16d56",
+      "flatNormal": [
+        0,
+        0.8320502943378437,
+        0.554700196225229
+      ],
+      "board": "B",
+      "boardLabel": "B05",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P15",
+      "name": "空心烟囱",
+      "kind": "chimney",
+      "center": [
+        8,
+        21
+      ],
+      "footprint": [
+        10,
+        10
+      ],
+      "wallThickness": 1,
+      "topZ": 89,
+      "roof": "P14",
+      "approach": [
+        0,
+        0,
+        23
+      ],
+      "instruction": "将烟囱放到前坡右上方，斜底贴合屋顶，烟囱保持竖直。",
+      "color": "#b9765d",
+      "flatNormal": [
+        -1,
+        0,
+        0
+      ],
+      "board": "B",
+      "boardLabel": "B06",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P16",
+      "name": "底座海锚饰片",
+      "kind": "sign",
+      "center": [
+        0,
+        -52.1
+      ],
+      "centerZ": 1,
+      "width": 15,
+      "height": 1.5,
+      "thickness": 0.15,
+      "approach": [
+        0,
+        -15,
+        8
+      ],
+      "instruction": "将海锚饰片对齐底座前侧中央，图案朝外、长边保持水平。",
+      "color": "#738e9c",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C04"
+    },
+    {
+      "id": "P17",
+      "name": "左门廊拱撑",
+      "kind": "bracket",
+      "center": [
+        -25,
+        -45.51
+      ],
+      "size": [
+        10,
+        0.5,
+        6.5
+      ],
+      "opening": [
+        4.5,
+        3.7
+      ],
+      "deck": "P09",
+      "approach": [
+        0,
+        -14,
+        -5
+      ],
+      "instruction": "从门廊左支柱前下方斜向上贴入拱撑，宽边在上，避开檐口。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C05",
+      "bottomZ": 25
+    },
+    {
+      "id": "P18",
+      "name": "右门廊拱撑",
+      "kind": "bracket",
+      "center": [
+        25,
+        -45.51
+      ],
+      "size": [
+        10,
+        0.5,
+        6.5
+      ],
+      "opening": [
+        4.5,
+        3.7
+      ],
+      "deck": "P09",
+      "approach": [
+        0,
+        -14,
+        -5
+      ],
+      "instruction": "以相同方向贴好右侧拱撑，使左右两侧高度一致。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C06",
+      "bottomZ": 25
+    },
+    {
+      "id": "P19",
+      "name": "阁楼前墙",
+      "kind": "dormerFront",
+      "approach": [
+        0,
+        0,
+        18
+      ],
+      "instruction": "将阁楼前墙立到主屋前坡中央，窗面朝前，斜底贴合屋面。",
+      "color": "#f2e4c9",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "B",
+      "boardLabel": "B07",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P20",
+      "name": "阁楼左侧壁",
+      "kind": "dormerSide",
+      "side": -1,
+      "approach": [
+        0,
+        0,
+        16
+      ],
+      "instruction": "将左侧壁放到阁楼左侧，斜底顺着主屋屋坡落下。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        -1,
+        0,
+        0
+      ],
+      "board": "B",
+      "boardLabel": "B08",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P21",
+      "name": "阁楼右侧壁",
+      "kind": "dormerSide",
+      "side": 1,
+      "approach": [
+        0,
+        0,
+        16
+      ],
+      "instruction": "装上右侧壁，与左侧壁对称，顶部支撑阁楼屋顶。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        1,
+        0,
+        0
+      ],
+      "board": "B",
+      "boardLabel": "B09",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P22",
+      "name": "阁楼左坡顶",
+      "kind": "dormerRoof",
+      "side": -1,
+      "approach": [
+        0,
+        0,
+        16
+      ],
+      "instruction": "将阁楼左坡顶放到左侧壁上，内边靠向小屋脊。",
+      "color": "#b9765d",
+      "flatNormal": [
+        -0.49026124,
+        0.87157554,
+        0.0
+      ],
+      "board": "B",
+      "boardLabel": "B10",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P23",
+      "name": "阁楼右坡顶",
+      "kind": "dormerRoof",
+      "side": 1,
+      "approach": [
+        0,
+        0,
+        16
+      ],
+      "instruction": "将右坡顶放下，与左坡顶在阁楼屋脊合拢。",
+      "color": "#b9765d",
+      "flatNormal": [
+        0.49026124,
+        0.87157554,
+        0.0
+      ],
+      "board": "B",
+      "boardLabel": "B11",
+      "structuralFrame": "main"
+    },
+    {
+      "id": "P24",
+      "name": "双烟管顶盖",
+      "kind": "chimneyCap",
+      "centerY": 22,
+      "thickness": 0.9,
+      "roof": "P14",
+      "roofFootHalfWidth": 2,
+      "postHalfWidth": 0.75,
+      "footHeight": 2.5,
+      "arrowZ": 70,
+      "arrowHalfWidth": 8,
+      "arrowShaftHalfHeight": 1.45,
+      "arrowHeadStartX": 3,
+      "arrowHeadHalfHeight": 4.5,
+      "approach": [
+        0,
+        0,
+        17
+      ],
+      "instruction": "将双烟管顶盖放到空心烟囱上，盖板四边居中，烟管向上。",
+      "color": "#738e9c",
+      "flatNormal": [
+        0,
+        1,
+        0
+      ],
+      "board": "C",
+      "boardLabel": "C07",
+      "center": [
+        21,
+        -8
+      ],
+      "footprint": [
+        12,
+        12
+      ],
+      "bottomZ": 89,
+      "height": 1.2
+    },
+    {
+      "id": "P25",
+      "name": "侧屋底台",
+      "kind": "base",
+      "center": [
+        3,
+        4.5
+      ],
+      "size": [
+        49,
+        50,
+        2
+      ],
+      "frame": {
+        "wallThickness": 1,
+        "eaveZ": 31,
+        "ridgeZ": 43,
+        "gableHalfWidth": 18
+      },
+      "approach": [
+        0,
+        16,
+        10
+      ],
+      "instruction": "把侧屋底台接到主底座右侧，两块底板的侧边贴齐。",
+      "color": "#dbc290",
+      "flatNormal": [
+        0,
+        1,
+        0
+      ],
+      "board": "A",
+      "boardLabel": "A07",
+      "structuralFrame": "annex"
+    },
+    {
+      "id": "P26",
+      "name": "侧屋右山墙",
+      "kind": "gable",
+      "base": "P25",
+      "center": [
+        0,
+        20
+      ],
+      "tenons": [
+        -10,
+        10
+      ],
+      "approach": [
+        0,
+        0,
+        19
+      ],
+      "instruction": "将侧屋右山墙插入底台外侧两个槽位，三角尖朝上。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        1,
+        0,
+        0
+      ],
+      "board": "A",
+      "boardLabel": "A08",
+      "structuralFrame": "annex"
+    },
+    {
+      "id": "P27",
+      "name": "侧屋后墙",
+      "kind": "wall",
+      "base": "P25",
+      "center": [
+        -17.5,
+        0
+      ],
+      "length": 38.8,
+      "tenons": [
+        -11,
+        11
+      ],
+      "approach": [
+        0,
+        0,
+        19
+      ],
+      "instruction": "将侧屋后墙插入后侧槽位，保持竖直。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        0,
+        0,
+        -1
+      ],
+      "board": "A",
+      "boardLabel": "A09",
+      "structuralFrame": "annex"
+    },
+    {
+      "id": "P28",
+      "name": "侧屋前墙",
+      "kind": "wall",
+      "base": "P25",
+      "center": [
+        17.5,
+        0
+      ],
+      "length": 38.8,
+      "tenons": [
+        -11,
+        11
+      ],
+      "approach": [
+        0,
+        0,
+        19
+      ],
+      "instruction": "将有窗印的侧屋前墙朝向小院，插入前侧槽位。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "A",
+      "boardLabel": "A10",
+      "structuralFrame": "annex"
+    },
+    {
+      "id": "P29",
+      "name": "侧屋贴墙板",
+      "kind": "gable",
+      "base": "P25",
+      "center": [
+        0,
+        -20
+      ],
+      "tenons": [
+        -10,
+        10
+      ],
+      "approach": [
+        0,
+        0,
+        19
+      ],
+      "instruction": "将贴墙板插入靠主屋一侧的槽位，与主屋右墙贴靠。",
+      "color": "#f2e4c9",
+      "flatNormal": [
+        -1,
+        0,
+        0
+      ],
+      "board": "A",
+      "boardLabel": "A11",
+      "structuralFrame": "annex"
+    },
+    {
+      "id": "P30",
+      "name": "侧屋后坡顶",
+      "kind": "roof",
+      "base": "P25",
+      "center": [
+        0,
+        0
+      ],
+      "side": -1,
+      "run": 21,
+      "length": 40.8,
+      "thickness": 0.8,
+      "approach": [
+        0,
+        9,
+        17
+      ],
+      "instruction": "放上侧屋后坡顶，内边对准侧屋屋脊。",
+      "color": "#b16d56",
+      "flatNormal": [
+        0,
+        0.8320502943378437,
+        -0.554700196225229
+      ],
+      "board": "B",
+      "boardLabel": "B12",
+      "structuralFrame": "annex"
+    },
+    {
+      "id": "P31",
+      "name": "侧屋前坡顶",
+      "kind": "roof",
+      "base": "P25",
+      "center": [
+        0,
+        0
+      ],
+      "side": 1,
+      "run": 21,
+      "length": 40.8,
+      "thickness": 0.8,
+      "approach": [
+        0,
+        -9,
+        17
+      ],
+      "instruction": "放上侧屋前坡顶，与后坡合拢；靠主屋的一端避免穿入墙体。",
+      "color": "#b16d56",
+      "flatNormal": [
+        0,
+        0.8320502943378437,
+        0.554700196225229
+      ],
+      "board": "B",
+      "boardLabel": "B13",
+      "structuralFrame": "annex"
+    },
+    {
+      "id": "P32",
+      "name": "侧屋窗框",
+      "kind": "window",
+      "center": [
+        54.5,
+        -18.425
+      ],
+      "centerZ": 17,
+      "width": 13,
+      "height": 15,
+      "thickness": 0.75,
+      "approach": [
+        0,
+        -13,
+        6
+      ],
+      "instruction": "将侧屋窗框贴到前墙窗印上，窗格朝外。",
+      "color": "#738e9c",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C08",
+      "opening": [
+        9.6,
+        11.6
+      ]
+    },
+    {
+      "id": "P33",
+      "name": "小院地台",
+      "kind": "yardBase",
+      "center": [
+        59,
+        -39.75
+      ],
+      "size": [
+        50,
+        24.5,
+        2
+      ],
+      "approach": [
+        0,
+        -18,
+        8
+      ],
+      "instruction": "将小院地台放在侧屋前方，与侧屋底台和主底座拼齐。",
+      "color": "#d8c39e",
+      "flatNormal": [
+        0,
+        1,
+        0
+      ],
+      "board": "A",
+      "boardLabel": "A12"
+    },
+    {
+      "id": "P34",
+      "name": "门廊台阶",
+      "kind": "steps",
+      "width": 13.5,
+      "tiers": [
+        [
+          -51.5,
+          0.6
+        ],
+        [
+          -49.5,
+          1.2
+        ]
+      ],
+      "backY": -48,
+      "approach": [
+        0,
+        -16,
+        7
+      ],
+      "instruction": "将两级台阶放到门廊前方中央，较高一级靠向门廊地台。",
+      "color": "#e5d1ac",
+      "flatNormal": [
+        0,
+        1,
+        0
+      ],
+      "board": "A",
+      "boardLabel": "A13"
+    },
+    {
+      "id": "P37",
+      "name": "院前左立柱",
+      "kind": "fencePost",
+      "center": [
+        36,
+        -49.5
+      ],
+      "size": [
+        1,
+        31,
+        7
+      ],
+      "opening": [
+        10.4,
+        3.5
+      ],
+      "deck": "P33",
+      "alongX": true,
+      "approach": [
+        0,
+        -12,
+        8
+      ],
+      "instruction": "将院前左立柱竖立在小院前沿靠主屋一端。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C11",
+      "footprint": [
+        3,
+        3
+      ],
+      "bottomZ": 2,
+      "height": 14
+    },
+    {
+      "id": "P38",
+      "name": "院角立柱",
+      "kind": "fencePost",
+      "center": [
+        81.5,
+        -49.5
+      ],
+      "size": [
+        1,
+        31,
+        7
+      ],
+      "opening": [
+        10.4,
+        3.5
+      ],
+      "deck": "P33",
+      "alongX": true,
+      "approach": [
+        0,
+        -12,
+        8
+      ],
+      "instruction": "将院角立柱放到小院右前角，和左立柱在同一直线上。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C12",
+      "footprint": [
+        3,
+        3
+      ],
+      "bottomZ": 2,
+      "height": 14
+    },
+    {
+      "id": "P39",
+      "name": "院后立柱",
+      "kind": "fencePost",
+      "center": [
+        81.5,
+        -29.5
+      ],
+      "size": [
+        1,
+        17.8,
+        7
+      ],
+      "opening": [
+        5.8,
+        3.5
+      ],
+      "deck": "P33",
+      "alongX": true,
+      "approach": [
+        0,
+        0,
+        18
+      ],
+      "instruction": "将院后立柱放到右侧靠侧屋的一端，三根立柱围出小院边界。",
+      "color": "#738e9c",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C13",
+      "footprint": [
+        3,
+        3
+      ],
+      "bottomZ": 2,
+      "height": 14
+    },
+    {
+      "id": "P35",
+      "name": "小院前栏",
+      "kind": "rail",
+      "center": [
+        58.75,
+        -49.5
+      ],
+      "size": [
+        1,
+        42.5,
+        11
+      ],
+      "opening": [
+        5,
+        7.5
+      ],
+      "deck": "P33",
+      "approach": [
+        0,
+        -12,
+        16
+      ],
+      "instruction": "将长栏杆装到小院前沿，横向连接院前左立柱与院角立柱。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        0,
+        0,
+        1
+      ],
+      "board": "C",
+      "boardLabel": "C09",
+      "openingCount": 6,
+      "alongX": true
+    },
+    {
+      "id": "P36",
+      "name": "小院侧栏",
+      "kind": "rail",
+      "center": [
+        81.5,
+        -39.5
+      ],
+      "size": [
+        1,
+        17,
+        11
+      ],
+      "opening": [
+        3.2,
+        7.5
+      ],
+      "deck": "P33",
+      "approach": [
+        12,
+        0,
+        9
+      ],
+      "instruction": "将短栏杆放到小院右侧，连接院角立柱与院后立柱。",
+      "color": "#efdfbf",
+      "flatNormal": [
+        1,
+        0,
+        0
+      ],
+      "board": "C",
+      "boardLabel": "C10",
+      "openingCount": 3
+    }
+  ],
+  "dormer": {
+    "roof": "P14",
+    "frontX": 20,
+    "centerY": 0,
+    "halfWidth": 9,
+    "eaveZ": 65,
+    "ridgeZ": 70,
+    "wallThickness": 1,
+    "overhang": 1.3,
+    "thickness": 0.8
+  },
+  "structuralFrames": {
+    "main": {
+      "rotationDegrees": -90,
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "annex": {
+      "rotationDegrees": -90,
+      "offset": [
+        54.5,
+        0,
+        0
+      ]
+    }
+  },
+  "geometry_revision": "v2-reference-aligned; retained 40 parts and 13/13/14 board counts"
+}
