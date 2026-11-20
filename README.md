@@ -1,8 +1,12 @@
 # 拼装工坊
 
-交互式 3D 拼装图鉴。原创纸模「海边小屋」支持三张零件板与四十件拼装，家具说明书提供宜家 LACK 茶几与 IVAR 松木双门柜的逐步装配、工具演示和连接特写。完成一条路线后，可以把作品收入本地收藏。
+**在 Codex、Claude Code 等 AI 工具里启用拼装工坊 Skill，上传一份 PDF 装配说明书，就能让 AI 把它做成可以在浏览器里操作的 3D 说明书。** 开始前先看要准备哪些零件和工具。装到某一步拿不准方向，就暂停，转到自己手里的角度，放大连接处，看清螺丝该从哪一侧拧进去。
 
-[打开拼装工坊在线体验](https://pinzhuang-gongfang.pages.dev/)
+上传 PDF 后，可以直接对 AI 说：
+
+> 用拼装工坊的 pdf-to-3d-manual Skill，把这份 PDF 做成可交互的 3D 装配说明书。我想先看零件和工具清单，再跟着原说明书一步一步装。
+
+[获取 Skill（中英双语）](skills/pdf-to-3d-manual/) · [试试 3D 说明书：给 IVAR 柜装上门铰链](https://pinzhuang-gongfang.pages.dev/ivar/?route=wall&resume=8) · [浏览拼装工坊全部作品](https://pinzhuang-gongfang.pages.dev/)
 
 ## 制作工作流
 
