@@ -39,3 +39,19 @@ python -m http.server 4184 --bind 127.0.0.1 --directory outputs/拼装工坊/sit
 ## 素材
 
 网页使用 Three.js 和 Vite。家具原图取自宜家对应产品的装配说明书，随资料保留原 PDF。包内模型为互动说明书使用的最终资产，包含 Aholo 生成并针对装配位置校正的部件与材质。
+
+## 反馈与共创 · Feedback and collaboration
+
+哪一步让你停下来转了好几次视角？欢迎告诉我是哪件家具、哪一步，以及你当时想看清什么。如果你有一本想做成 3D 的说明书，或想一起做模型、交互动效、试装体验，也欢迎带着想法来聊。[提建议或联系我共创](https://github.com/byby123byby/pinzhuang-gongfang/issues/new)
+
+Which step made you turn the model around a few times? Tell me what you were assembling, which step you were on, and what you wanted to see. If you have a manual you'd love to see in 3D, or you'd like to help model a part, animate a tricky step, or try a build, I'd love to hear from you. [Share feedback or propose a collaboration](https://github.com/byby123byby/pinzhuang-gongfang/issues/new)
+
+## 作品署名与使用说明 · Credits and reuse
+
+「拼装工坊」由 [@byby123byby](https://github.com/byby123byby) 发起并维护。[项目主页](https://pinzhuang-gongfang.pages.dev/)
+
+欢迎浏览源码、在本地运行和评审本项目。项目作者保留对原创代码、工作流文档和原创美术素材的权利。如需将这些内容用于其他项目、参赛、再分发或商用，请先通过上方共创入口联系作者取得授权。宜家说明书与原图、第三方软件和素材的权利归各自权利人，按各自条款使用。
+
+Assembly Workshop was created and is maintained by [@byby123byby](https://github.com/byby123byby). [Project website](https://pinzhuang-gongfang.pages.dev/)
+
+You are welcome to browse the source, run the project locally, and review it. The author reserves the rights to the project's original code, workflow documentation, and original artwork. To reuse these materials in another project or competition entry, redistribute them, or use them commercially, please contact the author through the collaboration link above for permission first. IKEA manuals and illustrations, third-party software, and third-party assets remain subject to their respective rights and terms.
