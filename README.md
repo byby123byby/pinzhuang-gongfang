@@ -8,7 +8,21 @@
 
 [获取 Skill（中英双语）](skills/pdf-to-3d-manual/) · [试试 3D 说明书：给 IVAR 柜装上门铰链](https://pinzhuang-gongfang.pages.dev/ivar/?route=wall&resume=8) · [浏览拼装工坊全部作品](https://pinzhuang-gongfang.pages.dev/)
 
-## 制作工作流
+## 一份 PDF 怎样变成 3D 说明书？
+
+主 Agent 分派读图、建模和检查任务。每一步都保留原说明书页码，方便检查者拿实际模型对照原图。
+
+```mermaid
+flowchart TD
+    pdf["上传 PDF 装配说明书"] --> lead["主 Agent · 协调制作"]
+    lead --> read["读图 Agent<br/>核对零件数量，辨认装配方向"]
+    read --> model["建模 Agent<br/>用 Blender 和 Aholo 制作零件，编排装配动作"]
+    model --> check["独立检查 Agent<br/>对照原图检查孔位、朝向和工具接触"]
+    pdf -. 原图依据 .-> check
+    check -->|发现模型或动作偏差| model
+    check -->|通过| deliver["主 Agent · 在浏览器中实测并交付"]
+    deliver --> manual["交互式 3D 说明书<br/>逐步播放、旋转零件、放大连接处"]
+```
 
 [PDF 转 3D 装配说明书工作流](skills/pdf-to-3d-manual/SKILL.md) 包含说明书解读、Aholo 多视图参考、建模与独立复核的分工。成品网页可直接用仓库内的资产构建。
 
